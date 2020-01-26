@@ -3,35 +3,35 @@
 3    package="com.noon.a7pets.test" >
 4
 5    <uses-sdk
-5-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:5:5-74
+5-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:5:5-74
 6        android:minSdkVersion="27"
-6-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:5:15-41
+6-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:5:15-41
 7        android:targetSdkVersion="28" />
-7-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:5:42-71
+7-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:5:42-71
 8
 9    <instrumentation
-9-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:11:5-15:65
+9-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:11:5-15:65
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:11:22-76
+10-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:11:22-76
 11        android:functionalTest="false"
-11-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:14:22-52
+11-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:14:22-52
 12        android:handleProfiling="false"
-12-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:13:22-53
+12-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:13:22-53
 13        android:label="Tests for com.noon.a7pets"
-13-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:15:22-63
+13-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:15:22-63
 14        android:targetPackage="com.noon.a7pets" />
-14-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:12:22-61
+14-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:12:22-61
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\cc57a0a797f53518904547de8b6b2a9a\core-1.2.0\AndroidManifest.xml:24:5-72
 16-->[androidx.test:core:1.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\cc57a0a797f53518904547de8b6b2a9a\core-1.2.0\AndroidManifest.xml:24:22-69
 17
 18    <application android:debuggable="true" >
-18-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:7:5-9:19
-18-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:7:18-43
+18-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:7:5-9:19
+18-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:7:18-43
 19        <uses-library android:name="android.test.runner" />
-19-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:8:9-60
-19-->E:\7Pets-V2-master\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1604317271572345162.xml:8:23-57
+19-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:8:9-60
+19-->D:\7Pets\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger7274747050175928489.xml:8:23-57
 20
 21        <activity
 21-->[androidx.test:core:1.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\cc57a0a797f53518904547de8b6b2a9a\core-1.2.0\AndroidManifest.xml:27:9-33:20

@@ -7,7 +7,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -39,13 +38,15 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.mikepenz.materialize.util.UIUtils;
-import com.noon.a7pets.Productscategory.Dogs;
+import com.noon.a7pets.Categories.BirdsCategoryActivity;
+import com.noon.a7pets.Categories.CatsCategoryActivity;
+import com.noon.a7pets.Categories.DogsCategoryActivity;
+import com.noon.a7pets.Categories.FishCategoryActivity;
+import com.noon.a7pets.Categories.OthersCategoryActivity;
 import com.noon.a7pets.Rgisteration.SignInActivity;
 import com.noon.a7pets.Rgisteration.WelcomeActivity;
 import com.noon.a7pets.networksync.CheckInternetConnection;
 import com.noon.a7pets.usersession.UserSession;
-import com.squareup.picasso.Picasso;
-import com.squareup.picasso.RequestCreator;
 import com.webianks.easy_feedback.EasyFeedback;
 
 import java.io.IOException;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     //private CrossfadeDrawerLayout crossfadeDrawerLayout = null;
 
 
-    private View dogFood;
+    private View dogs, cats, birds, fish, others;
     //to get user session data
     private UserSession session;
     private HashMap<String, String> user;
@@ -111,11 +112,43 @@ public class MainActivity extends AppCompatActivity {
         //Navigation Drawer with toolbar
 //        inflateNavDrawer();
 
-        dogFood = findViewById(R.id.dog_food_tap);
-        dogFood.setOnClickListener(new View.OnClickListener() {
+        dogs = findViewById(R.id.dog_food_tap);
+        dogs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Dogs.class));
+                startActivity(new Intent(MainActivity.this, DogsCategoryActivity.class));
+            }
+        });
+
+        cats = findViewById(R.id.cats);
+        cats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CatsCategoryActivity.class));
+            }
+        });
+
+        birds = findViewById(R.id.birds);
+        birds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BirdsCategoryActivity.class));
+            }
+        });
+
+        fish = findViewById(R.id.fish);
+        fish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FishCategoryActivity.class));
+            }
+        });
+
+        others = findViewById(R.id.others);
+        others.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, OthersCategoryActivity.class));
             }
         });
         //ImageSLider
@@ -165,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                                 .tintTarget(true)
                                 .transparentTarget(true)
                                 .outerCircleColor(R.color.second),
-                        TapTarget.forView(findViewById(R.id.dog_food), "Categories", "Product Categories have been listed here !")
+                        TapTarget.forView(findViewById(R.id.dogs), "Categories", "Product Categories have been listed here !")
                                 .targetCircleColor(R.color.colorAccent)
                                 .titleTextColor(R.color.colorAccent)
                                 .titleTextSize(25)
@@ -255,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             //Log.e(TAG, e.getMessage());
         }
-        
+
         // Create the AccountHeader ----------------------------------------------------------------
         //Profile Making
         IProfile profile = new ProfileDrawerItem()
@@ -321,16 +354,16 @@ public class MainActivity extends AppCompatActivity {
                                 startActivity(new Intent(MainActivity.this, Cart.class));
                                 break;
                             case 5:
-                                        String currentUser = mAuth.getCurrentUser().getUid();
-                                        userRef.child(currentUser).child("device_token").setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                                FirebaseAuth.getInstance().signOut();
-                                                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-                                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                                startActivity(intent);
-                                            }
-                                        });
+                                String currentUser = mAuth.getCurrentUser().getUid();
+                                userRef.child(currentUser).child("device_token").setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void aVoid) {
+                                        FirebaseAuth.getInstance().signOut();
+                                        Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        startActivity(intent);
+                                    }
+                                });
                                 finish();
                                 break;
 
@@ -445,7 +478,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-        public void viewProfile(View view) {
+    public void viewProfile(View view) {
         startActivity(new Intent(MainActivity.this, Profile.class));
     }
 

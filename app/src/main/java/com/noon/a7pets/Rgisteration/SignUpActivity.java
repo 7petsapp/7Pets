@@ -352,23 +352,17 @@ public class SignUpActivity extends Activity {
         final String phoneNumber = editTextPhone.getText().toString();
 
         if (firstName.isEmpty()) {
-            editTextFirstName.setError("First name is required");
+            editTextFirstName.setError("Name is required");
             editTextFirstName.requestFocus();
             return;
         }
-
         if (email.isEmpty()) {
             editTextEmail.setError("Email is required");
             editTextEmail.requestFocus();
             return;
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextEmail.setError("Valid email  is required");
-            editTextEmail.requestFocus();
-            return;
-        }
-        if (!email.endsWith(".com")) {
-            editTextEmail.setError("Company email is required");
+            editTextEmail.setError("Valid email is required");
             editTextEmail.requestFocus();
             return;
         }
@@ -427,7 +421,7 @@ public class SignUpActivity extends Activity {
                                 if (task.isSuccessful()) {
                                     saveUserInfoToFirebaseDatabase();
                                     FirebaseAuth mAuth = FirebaseAuth.getInstance();
-                                     currentUserID = mAuth.getCurrentUser().getUid();
+                                    currentUserID = mAuth.getCurrentUser().getUid();
                                     deviceTokenRef = FirebaseDatabase.getInstance().getReference().child("Users").child(currentUserID);
                                     String deviceToken = FirebaseInstanceId.getInstance().getToken();
                                     deviceTokenRef.child("device_token").setValue(deviceToken);

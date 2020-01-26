@@ -17,8 +17,14 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrderPlaced"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Categories.OthersCategoryActivity"></activity>
+        <activity android:name=".Categories.FishCategoryActivity" />
+        <activity android:name=".Categories.DogsCategoryActivity" />
+        <activity android:name=".Categories.CatsCategoryActivity" />
+        <activity android:name=".Categories.BirdsCategoryActivity" />
+        <activity
+            android:name=".OrderPlaced"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Wishlist"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -29,8 +35,9 @@
         <activity
             android:name=".IndividualProduct"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OrderDetails"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".OrderDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Cart"
             android:theme="@style/AppTheme.NoActionBar" />

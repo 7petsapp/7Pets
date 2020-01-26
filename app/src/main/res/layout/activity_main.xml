@@ -1,199 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_light"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            app:titleTextColor="@color/colorAccent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/blacklist"
+                android:gravity="start"
+                android:text="7"
+                android:textColor="@color/md_green_800"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blacklist"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="Pets"
+                android:textColor="@color/primary"
+                android:textSize="28sp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:titleTextColor="@color/colorAccent"
-                android:gravity="left"
-                android:paddingTop="5dp"
-                android:background="@color/colorAccent">
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:textColor="@color/md_green_800"
-                    android:textSize="28sp"
-                    android:gravity="start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="7"
-                    android:layout_marginLeft="8dp"
-                    android:fontFamily="@font/blacklist"
-                    />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/notifintro"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="ripple.json"
+                    app:lottie_loop="true" />
 
-                <TextView
-                    android:textColor="@color/primary"
-                    android:id="@+id/appname"
-                    android:textSize="28sp"
-                    android:gravity="start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pets"
-                    android:fontFamily="@font/blacklist"
-                    android:padding="5dp"/>
+                <ImageView
+                    android:id="@+id/view_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="viewProfile"
+                    android:src="@drawable/profile" />
 
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:gravity="right"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="viewCart"
+                    app:srcCompat="@drawable/cart" />
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/notifintro"
-                        android:layout_width="25dp"
-                        android:layout_height="match_parent"
-                        app:lottie_fileName="ripple.json"
-                        app:lottie_loop="true"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="10dp"
-                        app:lottie_autoPlay="true"
-                        />
+            </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/view_profile"
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="10dp"
-                        android:onClick="viewProfile"
-                        android:src="@drawable/profile"
-                        />
-
-                    <ImageView
-                        android:id="@+id/cart"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:srcCompat="@drawable/cart"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="15dp"
-                        android:onClick="viewCart"
-                        />
-
-                </LinearLayout>
-
-            </androidx.appcompat.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            tools:context=".MainActivity"-->
-<!--            android:background="#EEEEE0">-->
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            tools:context=".MainActivity"-->
+        <!--            android:background="#EEEEE0">-->
 
 
-<!--            <androidx.recyclerview.widget.RecyclerView-->
-<!--                android:id="@+id/main_content_recycle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_marginStart="1dp"-->
-<!--                android:layout_marginTop="56dp"-->
-<!--                android:layout_marginEnd="1dp" />-->
+        <!--            <androidx.recyclerview.widget.RecyclerView-->
+        <!--                android:id="@+id/main_content_recycle"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginStart="1dp"-->
+        <!--                android:layout_marginTop="56dp"-->
+        <!--                android:layout_marginEnd="1dp" />-->
 
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
         <ScrollView
-            android:scrollbars="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/toolbar">
+            android:layout_below="@id/toolbar"
+            android:scrollbars="vertical">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
 
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/slider"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="140dp"
                     app:auto_cycle="true"
                     app:pager_animation="Default"
                     app:pager_animation_span="1100" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:padding="10dp">
 
-
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:orientation="horizontal"
                         android:weightSum="10">
 
-                        <androidx.cardview.widget.CardView
-                            style="@style/homegridcard"
-                            >
+                        <androidx.cardview.widget.CardView style="@style/homegridcard">
 
                             <RelativeLayout
                                 android:id="@+id/dog_food_tap"
-                                android:gravity="center"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent">
+                                android:layout_height="match_parent"
+                                android:gravity="center">
 
                                 <com.airbnb.lottie.LottieAnimationView
-                                    android:id="@+id/dog_food"
+                                    android:id="@+id/dogs"
                                     style="@style/homegridimage"
-                                    app:lottie_fileName="dog.json"
                                     android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
                                     android:scaleType="centerCrop"
-                                    app:lottie_loop="true"/>
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_fileName="dog.json"
+                                    app:lottie_loop="true" />
 
                                 <TextView
-                                    android:layout_below="@id/dog_food"
-                                    android:text="Dog Food"
-                                    style="@style/homegridtext"/>
+                                    style="@style/homegridtext"
+                                    android:layout_below="@id/dogs"
+                                    android:text="Dogs" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
-                        <androidx.cardview.widget.CardView
-                            style="@style/homegridcard"
-                            >
+                        <androidx.cardview.widget.CardView style="@style/homegridcard">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
                                 <com.airbnb.lottie.LottieAnimationView
-                                    android:id="@+id/cat_food"
+                                    android:id="@+id/cats"
                                     style="@style/homegridimage"
-                                    app:lottie_fileName="cat.json"
                                     android:foregroundGravity="center"
                                     app:lottie_autoPlay="true"
-                                    app:lottie_loop="true"/>
+                                    app:lottie_fileName="cat.json"
+                                    app:lottie_loop="true" />
 
                                 <TextView
-                                    android:layout_below="@id/cat_food"
-                                    android:text="Cat Food"
-                                    style="@style/homegridtext"/>
+                                    style="@style/homegridtext"
+                                    android:layout_below="@id/cats"
+                                    android:text="Cats" />
 
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -205,6 +196,104 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="10">
+
+                        <androidx.cardview.widget.CardView style="@style/homegridcard">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:id="@+id/birds"
+                                    style="@style/homegridimage"
+                                    android:foregroundGravity="center"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_fileName="bird.json"
+                                    app:lottie_loop="true" />
+
+                                <TextView
+                                    style="@style/homegridtext"
+                                    android:layout_below="@id/birds"
+                                    android:text="Birds" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView style="@style/homegridcard">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.airbnb.lottie.LottieAnimationView
+                                    android:id="@+id/fish"
+                                    style="@style/homegridimage"
+                                    android:foregroundGravity="center"
+                                    app:lottie_autoPlay="true"
+                                    app:lottie_fileName="fish.json"
+                                    app:lottie_loop="true" />
+
+                                <TextView
+                                    style="@style/homegridtext"
+                                    android:layout_below="@id/fish"
+                                    android:text="Fish" />
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            style="@style/homegridcard"-->
+                        <!--                            card_view:cardCornerRadius="@dimen/card_album_radius"-->
+                        <!--                            android:onClick="calendarsActivity">-->
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="match_parent">-->
+
+                        <!--                                <ImageView-->
+                        <!--                                    android:id="@+id/calendars"-->
+                        <!--                                    style="@style/homegridimage"-->
+                        <!--                                    app:srcCompat="@drawable/calendar" />-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_below="@id/calendars"-->
+                        <!--                                    android:text="Calendars"-->
+                        <!--                                    style="@style/homegridtext"/>-->
+
+                        <!--                            </RelativeLayout>-->
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
+                        <!--                        <androidx.cardview.widget.CardView-->
+                        <!--                            style="@style/homegridcard"-->
+                        <!--                            card_view:cardCornerRadius="@dimen/card_album_radius"-->
+                        <!--                            android:onClick="keychainsActivity">-->
+
+                        <!--                            <RelativeLayout-->
+                        <!--                                android:layout_width="match_parent"-->
+                        <!--                                android:layout_height="match_parent">-->
+
+                        <!--                                <ImageView-->
+                        <!--                                    android:id="@+id/keychain"-->
+                        <!--                                    style="@style/homegridimage"-->
+                        <!--                                    app:srcCompat="@drawable/keychain" />-->
+
+                        <!--                                <TextView-->
+                        <!--                                    android:layout_below="@id/keychain"-->
+                        <!--                                    android:text="Keychains"-->
+                        <!--                                    style="@style/homegridtext"/>-->
+
+                        <!--                            </RelativeLayout>-->
+
+                        <!--                        </androidx.cardview.widget.CardView>-->
 
                         <androidx.cardview.widget.CardView style="@style/homegridcard">
 
@@ -215,10 +304,10 @@
                                 <com.airbnb.lottie.LottieAnimationView
                                     android:id="@+id/others"
                                     style="@style/homegridimage"
-                                    app:lottie_fileName="bird.json"
                                     android:foregroundGravity="center"
                                     app:lottie_autoPlay="true"
-                                    app:lottie_loop="true"/>
+                                    app:lottie_fileName="turtle.json"
+                                    app:lottie_loop="true" />
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -226,118 +315,67 @@
                                     android:text="Others" />
 
                             </RelativeLayout>
-
                         </androidx.cardview.widget.CardView>
 
-                        <androidx.cardview.widget.CardView style="@style/homegridcard">
+                        <androidx.cardview.widget.CardView
+                            style="@style/homegridcard">
 
                             <RelativeLayout
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="match_parent">
 
                                 <com.airbnb.lottie.LottieAnimationView
                                     android:id="@+id/appointment"
                                     style="@style/homegridimage"
-                                    app:lottie_fileName="appointment.json"
                                     android:foregroundGravity="center"
                                     app:lottie_autoPlay="true"
-                                    app:lottie_loop="true"/>
+                                    app:lottie_fileName="appointment.json"
+                                    app:lottie_loop="true" />
 
                                 <TextView
                                     style="@style/homegridtext"
                                     android:layout_below="@id/appointment"
-                                    android:text="Reservation" />
+                                    android:text="Clinic Reservation" />
 
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="10">
-<!--                        <androidx.cardview.widget.CardView-->
-<!--                            style="@style/homegridcard"-->
-<!--                            card_view:cardCornerRadius="@dimen/card_album_radius"-->
-<!--                            android:onClick="calendarsActivity">-->
-
-<!--                            <RelativeLayout-->
-<!--                                android:layout_width="match_parent"-->
-<!--                                android:layout_height="match_parent">-->
-
-<!--                                <ImageView-->
-<!--                                    android:id="@+id/calendars"-->
-<!--                                    style="@style/homegridimage"-->
-<!--                                    app:srcCompat="@drawable/calendar" />-->
-
-<!--                                <TextView-->
-<!--                                    android:layout_below="@id/calendars"-->
-<!--                                    android:text="Calendars"-->
-<!--                                    style="@style/homegridtext"/>-->
-
-<!--                            </RelativeLayout>-->
-
-<!--                        </androidx.cardview.widget.CardView>-->
-<!--                        <androidx.cardview.widget.CardView-->
-<!--                            style="@style/homegridcard"-->
-<!--                            card_view:cardCornerRadius="@dimen/card_album_radius"-->
-<!--                            android:onClick="keychainsActivity">-->
-
-<!--                            <RelativeLayout-->
-<!--                                android:layout_width="match_parent"-->
-<!--                                android:layout_height="match_parent">-->
-
-<!--                                <ImageView-->
-<!--                                    android:id="@+id/keychain"-->
-<!--                                    style="@style/homegridimage"-->
-<!--                                    app:srcCompat="@drawable/keychain" />-->
-
-<!--                                <TextView-->
-<!--                                    android:layout_below="@id/keychain"-->
-<!--                                    android:text="Keychains"-->
-<!--                                    style="@style/homegridtext"/>-->
-
-<!--                            </RelativeLayout>-->
-
-<!--                        </androidx.cardview.widget.CardView>-->
-
-                    </LinearLayout>
-
                 </LinearLayout>
 
                 <LinearLayout
-                    android:gravity="center"
-                    android:background="#1b5e20"
-                    android:padding="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:background="#1b5e20"
+                    android:gravity="center"
+                    android:padding="10dp"
                     android:weightSum="10">
 
                     <TextView
+                        style="@style/headingfonts"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/raleway_semi_bold"
                         android:gravity="left"
                         android:padding="5dp"
-                        style="@style/headingfonts"
-                        android:textColor="#FFFFFF"
                         android:text="We are best at"
-                        android:layout_weight="3"/>
+                        android:textColor="#FFFFFF" />
 
                     <com.tomer.fadingtextview.FadingTextView
-                        android:layout_width="wrap_content"
-                        android:textColor="#FFFFFF"
-                        app:timeout="500"
                         style="@style/headingfonts"
-                        android:gravity="center"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:fontFamily="@font/raleway_medium"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
                         app:texts="@array/examples"
-                        android:layout_weight="7"/>
+                        app:timeout="500" />
 
                 </LinearLayout>
-
 
 
             </LinearLayout>

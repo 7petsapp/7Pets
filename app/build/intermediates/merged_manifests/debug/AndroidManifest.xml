@@ -29,6 +29,11 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.noon.a7pets.OthersCategoryActivity" />
+        <activity android:name="com.noon.a7pets.Categories.FishCategoryActivity" />
+        <activity android:name="com.noon.a7pets.Categories.DogsCategoryActivity" />
+        <activity android:name="com.noon.a7pets.Categories.CatsCategoryActivity" />
+        <activity android:name="com.noon.a7pets.Categories.BirdsCategoryActivity" />
         <activity
             android:name="com.noon.a7pets.OrderPlaced"
             android:theme="@style/AppTheme.NoActionBar" />

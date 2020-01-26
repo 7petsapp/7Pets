@@ -433,20 +433,19 @@ public class SignInActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Void aVoid) {
                             boolean isEmailVerified = user.isEmailVerified();
-                            if (isEmailVerified) {
-                                Intent intent = new Intent(SignInActivity.this, MainActivity.class);
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                startActivity(intent);
-                            } else {
-                                editTextEmail.setError("Your email is not verified.");
-                                editTextEmail.requestFocus();
-                                pls_verify_email.setVisibility(View.VISIBLE);
-//                                    resend_verify_email.setVisibility(View.VISIBLE);
-                                signInButton.setVisibility(View.VISIBLE);
-                                FirebaseAuth.getInstance().signOut();
-
-
-                            }
+//                            if (isEmailVerified) {
+                            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                            } else {
+//                                editTextEmail.setError("Your email is not verified.");
+//                                editTextEmail.requestFocus();
+//                                pls_verify_email.setVisibility(View.VISIBLE);
+////                                    resend_verify_email.setVisibility(View.VISIBLE);
+//                                signInButton.setVisibility(View.VISIBLE);
+//                                FirebaseAuth.getInstance().signOut();
+//
+//
+//                            }
 
                             String currentUserID = mAuth.getCurrentUser().getUid();
                             String deviceToken = FirebaseInstanceId.getInstance().getToken();
@@ -461,6 +460,7 @@ public class SignInActivity extends AppCompatActivity {
                                             }
                                         }
                                     });
+                            startActivity(intent);
                         }
 
 
