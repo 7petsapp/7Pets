@@ -40,8 +40,8 @@ public class DogFood extends AppCompatActivity {
         products.add(new Products(R.drawable.pet8, "Rastasda", "25"));
         products.add(new Products(R.drawable.pet9, "Popcata", "65"));
 
-        adapter = new ProductsAdapter(this, products);
-        recyclerView.setAdapter(adapter);
+//        adapter = new ProductsAdapter(this, products);
+//        recyclerView.setAdapter(adapter);
 
     }
 }

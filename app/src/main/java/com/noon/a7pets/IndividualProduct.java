@@ -55,7 +55,6 @@ public class IndividualProduct extends AppCompatActivity {
 
         private int quantity = 1;
         private UserSession session;
-        private GenericProductModel model;
         private DatabaseReference mDatabaseReference;
         private FirebaseAuth mAuth;
         private DatabaseReference userRef;
@@ -86,9 +85,11 @@ public class IndividualProduct extends AppCompatActivity {
         }
 
         private void initialize() {
-            model = (GenericProductModel) getIntent().getSerializableExtra("product");
+            Intent intent = getIntent();
+            GenericProductModel model = intent.getParcelableExtra("product");
 
-            productprice.setText("₹ " + (model.getCardprice()));
+            String price = String.valueOf(model.getCardprice());
+            productprice.setText(price + " EGP");
 
             productname.setText(model.getCardname());
             productdesc.setText(model.getCarddiscription());
@@ -135,11 +136,12 @@ public class IndividualProduct extends AppCompatActivity {
         }
 
         private SingleProductModel getProductObject() {
+            GenericProductModel model= new GenericProductModel();
             String quantity = quantityProductPage.getText().toString().trim();
-            String cardId = model.getCardid();
+            String cardId = String.valueOf(model.getCardid());
             return new SingleProductModel(cardId,
                     quantity, useremail, usermobile,
-                    model.getCardname(), model.getCardprice(), model.getCardimage(),
+                    model.getCardname(), String.valueOf(model.getCardprice()), model.getCardimage(),
                     model.carddiscription,customheader.getText().toString(),custommessage.getText().toString());
 
         }

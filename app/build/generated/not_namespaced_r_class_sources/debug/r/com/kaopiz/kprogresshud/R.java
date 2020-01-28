@@ -26,7 +26,7 @@ public final class R {
         public static final int background = 0x7f0a0067;
         public static final int container = 0x7f0a0093;
         public static final int details_label = 0x7f0a00b2;
-        public static final int label = 0x7f0a00f3;
+        public static final int label = 0x7f0a00f4;
     }
     public static final class layout {
         private layout() {}

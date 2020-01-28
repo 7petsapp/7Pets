@@ -20,7 +20,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
-import com.noon.a7pets.Productscategory.Dogs;
 import com.noon.a7pets.models.GenericProductModel;
 import com.noon.a7pets.models.SingleProductModel;
 import com.noon.a7pets.networksync.CheckInternetConnection;

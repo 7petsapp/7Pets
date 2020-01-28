@@ -12,17 +12,21 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.noon.a7pets.models.GenericProductModel;
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewHolder> {
 
     Context context;
-    List<Products> products;
+    List<GenericProductModel> products;
 
-    public ProductsAdapter (Context context, List<Products> products){
+    public ProductsAdapter(Context context, List<GenericProductModel> products) {
         this.context = context;
         this.products = products;
     }
+
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -33,18 +37,17 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
     @Override
     public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
         //Biding the resources to views here
-        final Products product = products.get(position);
-        holder.productImage.setImageResource(products.get(position).getImage());
-        holder.productName.setText(products.get(position).getName());
-        holder.productPrice.setText(products.get(position).getPrice());
+        final GenericProductModel product = products.get(position);
+        Picasso.with(context).load(products.get(position).getCardimage()).into(holder.productImage);
+        holder.productName.setText(products.get(position).getCardname());
+        holder.productPrice.setText(String.valueOf(products.get(position).getCardprice()));
+
 
         holder.productCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,IndividualProduct.class);
-                intent.putExtra("name",product.getName());
-                intent.putExtra("price",product.getPrice());
-                intent.putExtra("img",product.getImage());
+                Intent intent = new Intent(context, IndividualProduct.class);
+                intent.putExtra("product", product);
                 context.startActivity(intent);
             }
         });
@@ -55,12 +58,13 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         return products.size();
     }
 
-    public class ProductViewHolder extends RecyclerView.ViewHolder{
+    public class ProductViewHolder extends RecyclerView.ViewHolder {
 
         ImageView productImage;
         TextView productName;
         TextView productPrice;
         CardView productCardView;
+
         public ProductViewHolder(@NonNull View itemView) {
             super(itemView);
             productImage = itemView.findViewById(R.id.product_image);
