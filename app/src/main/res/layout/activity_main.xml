@@ -149,14 +149,21 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/dogs"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    android:scaleType="centerCrop"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="dog.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/dogs"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    android:scaleType="centerCrop"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="dog.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/dog"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -173,13 +180,20 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/cats"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="cat.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/cats"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="cat.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/cat"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -203,13 +217,20 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/birds"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="bird.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/birds"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="bird.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/bird"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -226,13 +247,20 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/fish"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="fish.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/fish"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="fish.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/fish2"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -301,13 +329,20 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/others"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="turtle.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/others"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="turtle.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/otherpets"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"
@@ -324,13 +359,20 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent">
 
-                                <com.airbnb.lottie.LottieAnimationView
+<!--                                <com.airbnb.lottie.LottieAnimationView-->
+<!--                                    android:id="@+id/appointment"-->
+<!--                                    style="@style/homegridimage"-->
+<!--                                    android:foregroundGravity="center"-->
+<!--                                    app:lottie_autoPlay="true"-->
+<!--                                    app:lottie_fileName="appointment.json"-->
+<!--                                    app:lottie_loop="true" />-->
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
                                     android:id="@+id/appointment"
-                                    style="@style/homegridimage"
-                                    android:foregroundGravity="center"
-                                    app:lottie_autoPlay="true"
-                                    app:lottie_fileName="appointment.json"
-                                    app:lottie_loop="true" />
+                                    android:src="@drawable/vet"
+                                    android:scaleType="centerCrop"/>
 
                                 <TextView
                                     style="@style/homegridtext"

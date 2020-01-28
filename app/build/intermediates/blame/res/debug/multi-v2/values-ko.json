@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\7Pets-V2-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "D:\\7Pets\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Muhammad Jimmy\\.gradle\\caches\\transforms-2\\files-2.1\\1c2b09a5f0a0a3a31c940e9db6e61f3d\\jetified-easy-feedback-1.0.5\\res\\values-ko\\values-ko.xml",

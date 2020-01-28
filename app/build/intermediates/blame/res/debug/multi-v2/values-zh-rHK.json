@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\7Pets-V2-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+            "outputFile": "D:\\7Pets\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Muhammad Jimmy\\.gradle\\caches\\transforms-2\\files-2.1\\2111d963c95cc6e94705fb367f0a0943\\core-1.1.0\\res\\values-zh-rHK\\values-zh-rHK.xml",

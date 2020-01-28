@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\7Pets-V2-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "D:\\7Pets\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Muhammad Jimmy\\.gradle\\caches\\transforms-2\\files-2.1\\3eb4e7700bf408591a47c4e90d14c02b\\materialdrawer-6.1.2\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

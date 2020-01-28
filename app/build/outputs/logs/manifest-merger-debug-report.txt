@@ -263,10 +263,10 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:19:9-40
-activity#com.noon.a7pets.OthersSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:9-69
+activity#com.noon.a7pets.Productscategory.OthersSuppliesActivity
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:9-86
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:19-57
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:19-74
 activity#com.noon.a7pets.Productscategory.OthersFoodActivity
 ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:21:9-73
 	android:name

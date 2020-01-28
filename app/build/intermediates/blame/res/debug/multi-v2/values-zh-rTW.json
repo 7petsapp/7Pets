@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\7Pets-V2-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "D:\\7Pets\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Muhammad Jimmy\\.gradle\\caches\\transforms-2\\files-2.1\\694913784c664eb3cea819659da4cb9a\\jetified-play-services-basement-17.0.0\\res\\values-zh-rTW\\values.xml",
