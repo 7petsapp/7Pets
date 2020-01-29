@@ -11,8 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb422cb-0a90-4c4b-acfc-7e725501ca3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyFishActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyFishActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,19 +65,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyBirdsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="96" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyFishActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="60" column="99" selection-start-line="60" selection-start-column="91" selection-end-line="60" selection-end-column="99" />
+            <state relative-caret-position="618">
+              <caret line="94" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="94" />
             </state>
           </provider>
         </entry>
@@ -86,8 +77,27 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="60" column="95" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="47" />
+              <caret line="15" column="52" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -142,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_order_placed.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/OrderPlaced.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/OrderDetails.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_order_details.xml" />
@@ -165,7 +174,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/OthersSuppliesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/OthersFoodActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishSuppliesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_cats_category.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dogs_food.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/DogFood.java" />
@@ -193,6 +201,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BirdSuppliesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyFishActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java" />
       </list>
     </option>
   </component>
@@ -492,10 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fish_supplies.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -617,13 +623,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishSuppliesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
@@ -859,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BirdFoodActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -885,10 +876,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_fish_food.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_buy_fish.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/BuyFishActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="60" column="99" selection-start-line="60" selection-start-column="91" selection-end-line="60" selection-end-column="99" />
+        <state relative-caret-position="618">
+          <caret line="94" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/noon/a7pets/Productscategory/FishFoodActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="60" column="95" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="104" />
         </state>
       </provider>
     </entry>
