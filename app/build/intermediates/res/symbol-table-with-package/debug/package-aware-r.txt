@@ -2073,6 +2073,7 @@ id fish_food
 id fish_food_recycler_view
 id fish_recycler_view
 id fish_supplies
+id fish_supplies_recycler_view
 id fixed
 id forever
 id forget_password
