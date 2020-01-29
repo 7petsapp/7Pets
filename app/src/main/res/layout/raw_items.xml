@@ -49,7 +49,7 @@
                 android:paddingRight="8dp"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textSize="24sp"
+                android:textSize="21sp"
                 android:textStyle="italic"
                 android:typeface="sans"
                 tools:text="pedigree" />
@@ -71,7 +71,7 @@
                     android:paddingRight="8dp"
                     android:textAlignment="textStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:typeface="sans"
                     tools:text="15" />
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:text="EGP"
                     android:textColor="#009624"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </LinearLayout>

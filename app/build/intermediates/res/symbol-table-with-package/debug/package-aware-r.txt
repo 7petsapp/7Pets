@@ -1676,6 +1676,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable agenda
+drawable arrowbackpng
 drawable avd_hide_password
 drawable avd_show_password
 drawable bags
@@ -1763,6 +1764,7 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_search_white
 drawable ic_share_black_18dp
 drawable ic_shopping_cart_black_24dp
 drawable indicator_corner_bg
@@ -1926,6 +1928,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_settings
 id action_text
 id actions
@@ -1948,6 +1951,7 @@ id appointment
 id async
 id auto
 id automatic
+id backArrow
 id background
 id barrier
 id beginning
@@ -2528,6 +2532,7 @@ layout welcome_slide2
 layout welcome_slide3
 layout welcome_slide4
 menu menu_main
+menu search_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logo
