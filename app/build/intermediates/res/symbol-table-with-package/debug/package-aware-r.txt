@@ -2037,6 +2037,7 @@ id dog_food_tap
 id dog_supplies
 id dogs
 id dogs_food_recycler_view
+id dogs_supplies_recycler_view
 id editText
 id editTextConfirmPassword
 id editTextEmail
