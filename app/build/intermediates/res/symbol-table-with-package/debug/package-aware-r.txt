@@ -1985,6 +1985,7 @@ id cat_food
 id cat_supplies
 id cats
 id cats_food_recycler_view
+id cats_supplies_recycler_view
 id center
 id center_horizontal
 id center_vertical
