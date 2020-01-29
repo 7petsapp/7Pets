@@ -24,9 +24,9 @@ public final class R {
         private id() {}
 
         public static final int background = 0x7f0a0069;
-        public static final int container = 0x7f0a0097;
-        public static final int details_label = 0x7f0a00b6;
-        public static final int label = 0x7f0a00f9;
+        public static final int container = 0x7f0a0098;
+        public static final int details_label = 0x7f0a00b7;
+        public static final int label = 0x7f0a00fa;
     }
     public static final class layout {
         private layout() {}
