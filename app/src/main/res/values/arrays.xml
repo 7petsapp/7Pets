@@ -15,4 +15,44 @@
         <item>Unique Products</item>
         <item>Stylish Items</item>
     </string-array>
+
+    <string-array name="reason_of_appointment">
+        <item>Reason of Appointment</item>
+        <item>Neuter / Spay</item>
+        <item>Caesarian Section</item>
+        <item>Dental Surgery</item>
+        <item>Orthopaedic Surgery</item>
+        <item>General Surgery</item>
+        <item>Dermatology</item>
+        <item>General Medicine</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="appointment_time">
+        <item>Appointment Time</item>
+        <item>12:00 PM</item>
+        <item>12:30 PM</item>
+        <item>01:00 PM</item>
+        <item>01:30 PM</item>
+        <item>02:00 PM</item>
+        <item>02:30 PM</item>
+        <item>03:00 PM</item>
+        <item>03:30 PM</item>
+        <item>04:00 PM</item>
+        <item>04:30 PM</item>
+        <item>05:00 PM</item>
+        <item>05:30 PM</item>
+        <item>06:00 PM</item>
+        <item>06:30 PM</item>
+        <item>07:00 PM</item>
+        <item>07:30 PM</item>
+        <item>08:00 PM</item>
+        <item>08:30 PM</item>
+        <item>09:00 PM</item>
+        <item>09:30 PM</item>
+        <item>10:00 PM</item>
+        <item>10:30 PM</item>
+        <item>11:00 PM</item>
+        <item>11:30 PM</item>
+    </string-array>
 </resources>

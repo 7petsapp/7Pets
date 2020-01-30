@@ -39,10 +39,12 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array appointment_time
 array array_dot_active
 array array_dot_inactive
 array examples
 array radio_buttons
+array reason_of_appointment
 attr PagerIndicatorStyle
 attr SliderStyle
 attr about_libraries_card
@@ -1694,6 +1696,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_style
 drawable bubble
 drawable button_rect_normal
 drawable calendar
@@ -1740,6 +1743,7 @@ drawable dog
 drawable dogfood
 drawable dogsupplies
 drawable drawerback
+drawable edittext_style
 drawable email
 drawable explore
 drawable feedback
@@ -1767,6 +1771,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_white
 drawable ic_share_black_18dp
 drawable ic_shopping_cart_black_24dp
+drawable ic_spinner
 drawable indicator_corner_bg
 drawable internetconnection
 drawable keychain
@@ -1830,6 +1835,7 @@ drawable settings
 drawable share
 drawable similar
 drawable smartphone
+drawable spinner_style
 drawable splashback
 drawable tag
 drawable tooltip_frame_dark
@@ -1948,6 +1954,7 @@ id animation_view
 id appbar
 id appname
 id appointment
+id appointmentDate
 id async
 id auto
 id automatic
@@ -1969,6 +1976,7 @@ id btn_skip
 id buttonPanel
 id buttonSignIn
 id buttonSignUp
+id buttonSubmitAppointment
 id buttons_panel
 id buy_bird
 id buy_fish
@@ -1996,6 +2004,7 @@ id chains
 id checkbox
 id checked
 id chronometer
+id clinicReservationTap
 id clip_horizontal
 id clip_vertical
 id cod
@@ -2246,6 +2255,7 @@ id productprice
 id profilepic
 id progressBar
 id progressBarImg
+id progressBar_reservation
 id progressBar_sign_up
 id progressBar_sign_up_google
 id progress_circular
@@ -2304,6 +2314,8 @@ id snap
 id snapMargins
 id software
 id spacer
+id spinnerAppointmentTime
+id spinnerReasonOfAppointment
 id split_action_bar
 id spread
 id spread_inside
@@ -2438,6 +2450,7 @@ layout activity_cart
 layout activity_cat_food
 layout activity_cat_supplies
 layout activity_cats_category
+layout activity_clinic_reservation
 layout activity_complete_sign_up_data
 layout activity_dog_food
 layout activity_dog_supplies

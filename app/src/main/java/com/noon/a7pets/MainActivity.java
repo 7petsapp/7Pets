@@ -40,6 +40,7 @@ import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.mikepenz.materialize.util.UIUtils;
 import com.noon.a7pets.Categories.BirdsCategoryActivity;
 import com.noon.a7pets.Categories.CatsCategoryActivity;
+import com.noon.a7pets.Categories.ClinicReservationActivity;
 import com.noon.a7pets.Categories.DogsCategoryActivity;
 import com.noon.a7pets.Categories.FishCategoryActivity;
 import com.noon.a7pets.Categories.OthersCategoryActivity;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     //private CrossfadeDrawerLayout crossfadeDrawerLayout = null;
 
 
-    private View dogs, cats, birds, fish, others;
+    private View dogs, cats, birds, fish, others, clinic;
     //to get user session data
     private UserSession session;
     private HashMap<String, String> user;
@@ -149,6 +150,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, OthersCategoryActivity.class));
+            }
+        });
+
+        clinic = findViewById(R.id.clinicReservationTap);
+        clinic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ClinicReservationActivity.class));
             }
         });
         //ImageSLider

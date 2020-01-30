@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context=".Categories.ClinicReservationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:text="Reason of Appointment:"
+        android:textSize="21sp" />
+
+    <Spinner
+        android:id="@+id/spinnerReasonOfAppointment"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_style"
+        android:fontFamily="@font/raleway_medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:text="Appointment Date:"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/appointmentDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="@font/raleway_medium"
+        android:hint="Date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/raleway_semi_bold"
+        android:text="Appointment Time:"
+        android:textSize="21sp" />
+
+    <Spinner
+        android:id="@+id/spinnerAppointmentTime"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_style"
+        android:fontFamily="@font/raleway_medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonSubmitAppointment"
+            android:layout_width="154dp"
+            android:layout_height="47dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_style"
+            android:clickable="true"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_reservation"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

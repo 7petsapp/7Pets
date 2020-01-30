@@ -18,19 +18,19 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int kprogresshud_spinner = 0x7f0800bc;
+        public static final int kprogresshud_spinner = 0x7f0800bf;
     }
     public static final class id {
         private id() {}
 
-        public static final int background = 0x7f0a0069;
-        public static final int container = 0x7f0a009a;
-        public static final int details_label = 0x7f0a00b9;
-        public static final int label = 0x7f0a00ff;
+        public static final int background = 0x7f0a006a;
+        public static final int container = 0x7f0a009d;
+        public static final int details_label = 0x7f0a00bc;
+        public static final int label = 0x7f0a0102;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int kprogresshud_hud = 0x7f0d0055;
+        public static final int kprogresshud_hud = 0x7f0d0056;
     }
 }
