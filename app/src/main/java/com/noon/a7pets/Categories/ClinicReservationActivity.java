@@ -126,68 +126,70 @@ public class ClinicReservationActivity extends AppCompatActivity implements Date
         }
         buttonSubmitAppointment.setVisibility(View.INVISIBLE);
         progressBar_reservation.setVisibility(View.VISIBLE);
-        DatabaseReference appointmentsDb = FirebaseDatabase.getInstance().getReference().child("appointments").child(userId);
+        DatabaseReference appointmentsDb = FirebaseDatabase.getInstance().getReference().child("appointments");
+        DatabaseReference appointmentDb = FirebaseDatabase.getInstance().getReference().child("appointments").child(userId);
         ClinicReservation clinicReservation = new ClinicReservation(reasonOfAppointment, appointmentdate, appointmentTime);
-        appointmentsDb.setValue(clinicReservation).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                Toast.makeText(ClinicReservationActivity.this, "Appointment has ben reserved scuccessfully", Toast.LENGTH_LONG).show();
-                finish();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(ClinicReservationActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-                buttonSubmitAppointment.setVisibility(View.VISIBLE);
-                progressBar_reservation.setVisibility(View.INVISIBLE);
-            }
-        });
-//        appointmentsDb.addChildEventListener(new ChildEventListener() {
+//        appointmentDb.setValue(clinicReservation).addOnSuccessListener(new OnSuccessListener<Void>() {
 //            @Override
-//            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//                if (dataSnapshot.exists()) {
-//                    ClinicReservation reservation = dataSnapshot.getValue(ClinicReservation.class);
-//                    if (reservation.getDate().equals(appointmentdate) && reservation.getTime().equals(appointmentTime)) {
-//                        Toast.makeText(ClinicReservationActivity.this, "Appointment time is not available, please choose another time", Toast.LENGTH_LONG).show();
-//                        buttonSubmitAppointment.setVisibility(View.VISIBLE);
-//                    } else {
-//                        appointmentsDb.setValue(clinicReservation).addOnSuccessListener(new OnSuccessListener<Void>() {
-//                            @Override
-//                            public void onSuccess(Void aVoid) {
-//                                Toast.makeText(ClinicReservationActivity.this, "Appointment has ben reserved scuccessfully", Toast.LENGTH_LONG).show();
-//                                finish();
-//                            }
-//                        }).addOnFailureListener(new OnFailureListener() {
-//                            @Override
-//                            public void onFailure(@NonNull Exception e) {
-//                                Toast.makeText(ClinicReservationActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
-//                                buttonSubmitAppointment.setVisibility(View.VISIBLE);
-//                            }
-//                        });
-//                    }
-//                }
+//            public void onSuccess(Void aVoid) {
+//                Toast.makeText(ClinicReservationActivity.this, "Appointment has ben reserved scuccessfully", Toast.LENGTH_LONG).show();
+//                finish();
 //            }
-//
+//        }).addOnFailureListener(new OnFailureListener() {
 //            @Override
-//            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//
-//            }
-//
-//            @Override
-//            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
+//            public void onFailure(@NonNull Exception e) {
+//                Toast.makeText(ClinicReservationActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+//                buttonSubmitAppointment.setVisibility(View.VISIBLE);
+//                progressBar_reservation.setVisibility(View.INVISIBLE);
 //            }
 //        });
+        appointmentsDb.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                if (dataSnapshot.exists()) {
+                    ClinicReservation reservation = dataSnapshot.getValue(ClinicReservation.class);
+                    if (reservation.getDate().equals(appointmentdate) && reservation.getTime().equals(appointmentTime)) {
+                        Toast.makeText(ClinicReservationActivity.this, "Appointment time is not available, please choose another time", Toast.LENGTH_LONG).show();
+                        buttonSubmitAppointment.setVisibility(View.VISIBLE);
+                    } else {
+                        appointmentDb.setValue(clinicReservation).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(ClinicReservationActivity.this, "Appointment has ben reserved scuccessfully", Toast.LENGTH_LONG).show();
+                                finish();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(ClinicReservationActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                                buttonSubmitAppointment.setVisibility(View.VISIBLE);
+                                progressBar_reservation.setVisibility(View.INVISIBLE);
+                            }
+                        });
+                    }
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
