@@ -41,7 +41,7 @@
 21-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:13:22-65
 22
 23    <application
-23-->D:\7Pets\app\src\main\AndroidManifest.xml:13:5-91:19
+23-->D:\7Pets\app\src\main\AndroidManifest.xml:13:5-92:19
 24        android:allowBackup="true"
 24-->D:\7Pets\app\src\main\AndroidManifest.xml:14:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -58,382 +58,385 @@
 31        android:testOnly="true"
 32        android:theme="@style/AppTheme" >
 32-->D:\7Pets\app\src\main\AndroidManifest.xml:19:9-40
-33        <activity android:name="com.noon.a7pets.Categories.ClinicReservationActivity" />
-33-->D:\7Pets\app\src\main\AndroidManifest.xml:20:9-83
-33-->D:\7Pets\app\src\main\AndroidManifest.xml:20:19-71
-34        <activity android:name="com.noon.a7pets.Productscategory.OthersSuppliesActivity" />
-34-->D:\7Pets\app\src\main\AndroidManifest.xml:21:9-77
-34-->D:\7Pets\app\src\main\AndroidManifest.xml:21:19-74
-35        <activity android:name="com.noon.a7pets.Productscategory.OthersFoodActivity" />
-35-->D:\7Pets\app\src\main\AndroidManifest.xml:22:9-73
-35-->D:\7Pets\app\src\main\AndroidManifest.xml:22:19-70
-36        <activity android:name="com.noon.a7pets.Productscategory.FishSuppliesActivity" />
-36-->D:\7Pets\app\src\main\AndroidManifest.xml:23:9-75
-36-->D:\7Pets\app\src\main\AndroidManifest.xml:23:19-72
-37        <activity android:name="com.noon.a7pets.Productscategory.FishFoodActivity" />
-37-->D:\7Pets\app\src\main\AndroidManifest.xml:24:9-71
-37-->D:\7Pets\app\src\main\AndroidManifest.xml:24:19-68
-38        <activity android:name="com.noon.a7pets.Productscategory.BuyFishActivity" />
-38-->D:\7Pets\app\src\main\AndroidManifest.xml:25:9-70
-38-->D:\7Pets\app\src\main\AndroidManifest.xml:25:19-67
-39        <activity android:name="com.noon.a7pets.Productscategory.DogSuppliesActivity" />
-39-->D:\7Pets\app\src\main\AndroidManifest.xml:26:9-74
-39-->D:\7Pets\app\src\main\AndroidManifest.xml:26:19-71
-40        <activity android:name="com.noon.a7pets.Productscategory.DogsFoodActivity" />
-40-->D:\7Pets\app\src\main\AndroidManifest.xml:27:9-71
-40-->D:\7Pets\app\src\main\AndroidManifest.xml:27:19-68
-41        <activity android:name="com.noon.a7pets.Productscategory.CatSuppliesActivity" />
-41-->D:\7Pets\app\src\main\AndroidManifest.xml:28:9-74
-41-->D:\7Pets\app\src\main\AndroidManifest.xml:28:19-71
-42        <activity android:name="com.noon.a7pets.Productscategory.CatFoodActivity" />
-42-->D:\7Pets\app\src\main\AndroidManifest.xml:29:9-70
-42-->D:\7Pets\app\src\main\AndroidManifest.xml:29:19-67
-43        <activity android:name="com.noon.a7pets.Productscategory.BirdSuppliesActivity" />
-43-->D:\7Pets\app\src\main\AndroidManifest.xml:30:9-75
-43-->D:\7Pets\app\src\main\AndroidManifest.xml:30:19-72
-44        <activity android:name="com.noon.a7pets.Productscategory.BirdFoodActivity" />
-44-->D:\7Pets\app\src\main\AndroidManifest.xml:31:9-71
-44-->D:\7Pets\app\src\main\AndroidManifest.xml:31:19-68
-45        <activity android:name="com.noon.a7pets.Productscategory.BuyBirdsActivity" />
+33        <activity android:name="com.noon.a7pets.Activities.ClinicAppoinmentActivity" />
+33-->D:\7Pets\app\src\main\AndroidManifest.xml:20:9-82
+33-->D:\7Pets\app\src\main\AndroidManifest.xml:20:19-70
+34        <activity android:name="com.noon.a7pets.Categories.ClinicReservationActivity" />
+34-->D:\7Pets\app\src\main\AndroidManifest.xml:21:9-74
+34-->D:\7Pets\app\src\main\AndroidManifest.xml:21:19-71
+35        <activity android:name="com.noon.a7pets.Productscategory.OthersSuppliesActivity" />
+35-->D:\7Pets\app\src\main\AndroidManifest.xml:22:9-77
+35-->D:\7Pets\app\src\main\AndroidManifest.xml:22:19-74
+36        <activity android:name="com.noon.a7pets.Productscategory.OthersFoodActivity" />
+36-->D:\7Pets\app\src\main\AndroidManifest.xml:23:9-73
+36-->D:\7Pets\app\src\main\AndroidManifest.xml:23:19-70
+37        <activity android:name="com.noon.a7pets.Productscategory.FishSuppliesActivity" />
+37-->D:\7Pets\app\src\main\AndroidManifest.xml:24:9-75
+37-->D:\7Pets\app\src\main\AndroidManifest.xml:24:19-72
+38        <activity android:name="com.noon.a7pets.Productscategory.FishFoodActivity" />
+38-->D:\7Pets\app\src\main\AndroidManifest.xml:25:9-71
+38-->D:\7Pets\app\src\main\AndroidManifest.xml:25:19-68
+39        <activity android:name="com.noon.a7pets.Productscategory.BuyFishActivity" />
+39-->D:\7Pets\app\src\main\AndroidManifest.xml:26:9-70
+39-->D:\7Pets\app\src\main\AndroidManifest.xml:26:19-67
+40        <activity android:name="com.noon.a7pets.Productscategory.DogSuppliesActivity" />
+40-->D:\7Pets\app\src\main\AndroidManifest.xml:27:9-74
+40-->D:\7Pets\app\src\main\AndroidManifest.xml:27:19-71
+41        <activity android:name="com.noon.a7pets.Productscategory.DogsFoodActivity" />
+41-->D:\7Pets\app\src\main\AndroidManifest.xml:28:9-71
+41-->D:\7Pets\app\src\main\AndroidManifest.xml:28:19-68
+42        <activity android:name="com.noon.a7pets.Productscategory.CatSuppliesActivity" />
+42-->D:\7Pets\app\src\main\AndroidManifest.xml:29:9-74
+42-->D:\7Pets\app\src\main\AndroidManifest.xml:29:19-71
+43        <activity android:name="com.noon.a7pets.Productscategory.CatFoodActivity" />
+43-->D:\7Pets\app\src\main\AndroidManifest.xml:30:9-70
+43-->D:\7Pets\app\src\main\AndroidManifest.xml:30:19-67
+44        <activity android:name="com.noon.a7pets.Productscategory.BirdSuppliesActivity" />
+44-->D:\7Pets\app\src\main\AndroidManifest.xml:31:9-75
+44-->D:\7Pets\app\src\main\AndroidManifest.xml:31:19-72
+45        <activity android:name="com.noon.a7pets.Productscategory.BirdFoodActivity" />
 45-->D:\7Pets\app\src\main\AndroidManifest.xml:32:9-71
 45-->D:\7Pets\app\src\main\AndroidManifest.xml:32:19-68
-46        <activity android:name="com.noon.a7pets.Categories.OthersCategoryActivity" />
+46        <activity android:name="com.noon.a7pets.Productscategory.BuyBirdsActivity" />
 46-->D:\7Pets\app\src\main\AndroidManifest.xml:33:9-71
 46-->D:\7Pets\app\src\main\AndroidManifest.xml:33:19-68
-47        <activity android:name="com.noon.a7pets.Categories.FishCategoryActivity" />
-47-->D:\7Pets\app\src\main\AndroidManifest.xml:34:9-69
-47-->D:\7Pets\app\src\main\AndroidManifest.xml:34:19-66
-48        <activity android:name="com.noon.a7pets.Categories.DogsCategoryActivity" />
+47        <activity android:name="com.noon.a7pets.Categories.OthersCategoryActivity" />
+47-->D:\7Pets\app\src\main\AndroidManifest.xml:34:9-71
+47-->D:\7Pets\app\src\main\AndroidManifest.xml:34:19-68
+48        <activity android:name="com.noon.a7pets.Categories.FishCategoryActivity" />
 48-->D:\7Pets\app\src\main\AndroidManifest.xml:35:9-69
 48-->D:\7Pets\app\src\main\AndroidManifest.xml:35:19-66
-49        <activity android:name="com.noon.a7pets.Categories.CatsCategoryActivity" />
+49        <activity android:name="com.noon.a7pets.Categories.DogsCategoryActivity" />
 49-->D:\7Pets\app\src\main\AndroidManifest.xml:36:9-69
 49-->D:\7Pets\app\src\main\AndroidManifest.xml:36:19-66
-50        <activity android:name="com.noon.a7pets.Categories.BirdsCategoryActivity" />
-50-->D:\7Pets\app\src\main\AndroidManifest.xml:37:9-70
-50-->D:\7Pets\app\src\main\AndroidManifest.xml:37:19-67
-51        <activity
-51-->D:\7Pets\app\src\main\AndroidManifest.xml:38:9-40:59
-52            android:name="com.noon.a7pets.OrderPlaced"
-52-->D:\7Pets\app\src\main\AndroidManifest.xml:39:13-40
-53            android:theme="@style/AppTheme.NoActionBar" />
-53-->D:\7Pets\app\src\main\AndroidManifest.xml:40:13-56
-54        <activity
-54-->D:\7Pets\app\src\main\AndroidManifest.xml:41:9-43:59
-55            android:name="com.noon.a7pets.Wishlist"
-55-->D:\7Pets\app\src\main\AndroidManifest.xml:42:13-37
-56            android:theme="@style/AppTheme.NoActionBar" />
-56-->D:\7Pets\app\src\main\AndroidManifest.xml:43:13-56
-57        <activity
-57-->D:\7Pets\app\src\main\AndroidManifest.xml:44:9-46:59
-58            android:name="com.noon.a7pets.Profile"
-58-->D:\7Pets\app\src\main\AndroidManifest.xml:45:13-36
-59            android:theme="@style/AppTheme.NoActionBar" />
-59-->D:\7Pets\app\src\main\AndroidManifest.xml:46:13-56
-60        <activity android:name="com.noon.a7pets.Register" />
-60-->D:\7Pets\app\src\main\AndroidManifest.xml:47:9-46
-60-->D:\7Pets\app\src\main\AndroidManifest.xml:47:19-43
-61        <activity
-61-->D:\7Pets\app\src\main\AndroidManifest.xml:48:9-50:59
-62            android:name="com.noon.a7pets.IndividualProduct"
-62-->D:\7Pets\app\src\main\AndroidManifest.xml:49:13-46
-63            android:theme="@style/AppTheme.NoActionBar" />
-63-->D:\7Pets\app\src\main\AndroidManifest.xml:50:13-56
-64        <activity
-64-->D:\7Pets\app\src\main\AndroidManifest.xml:51:9-53:59
-65            android:name="com.noon.a7pets.OrderDetails"
-65-->D:\7Pets\app\src\main\AndroidManifest.xml:52:13-41
-66            android:theme="@style/AppTheme.NoActionBar" />
-66-->D:\7Pets\app\src\main\AndroidManifest.xml:53:13-56
-67        <activity
-67-->D:\7Pets\app\src\main\AndroidManifest.xml:54:9-56:59
-68            android:name="com.noon.a7pets.Cart"
-68-->D:\7Pets\app\src\main\AndroidManifest.xml:55:13-33
-69            android:theme="@style/AppTheme.NoActionBar" />
-69-->D:\7Pets\app\src\main\AndroidManifest.xml:56:13-56
-70        <activity
-70-->D:\7Pets\app\src\main\AndroidManifest.xml:57:9-59:59
-71            android:name="com.noon.a7pets.Productscategory.Dogs"
-71-->D:\7Pets\app\src\main\AndroidManifest.xml:58:13-50
-72            android:theme="@style/AppTheme.NoActionBar" />
-72-->D:\7Pets\app\src\main\AndroidManifest.xml:59:13-56
-73        <activity
-73-->D:\7Pets\app\src\main\AndroidManifest.xml:60:9-62:59
-74            android:name="com.noon.a7pets.LoginActivity"
-74-->D:\7Pets\app\src\main\AndroidManifest.xml:61:13-42
-75            android:theme="@style/AppTheme.NoActionBar" />
-75-->D:\7Pets\app\src\main\AndroidManifest.xml:62:13-56
-76        <activity
-76-->D:\7Pets\app\src\main\AndroidManifest.xml:63:9-65:59
-77            android:name="com.noon.a7pets.DogFood"
-77-->D:\7Pets\app\src\main\AndroidManifest.xml:64:13-36
-78            android:theme="@style/AppTheme.NoActionBar" />
-78-->D:\7Pets\app\src\main\AndroidManifest.xml:65:13-56
-79        <activity
-79-->D:\7Pets\app\src\main\AndroidManifest.xml:66:9-68:59
-80            android:name="com.noon.a7pets.Rgisteration.CompleteSignUpData"
-80-->D:\7Pets\app\src\main\AndroidManifest.xml:67:13-60
-81            android:theme="@style/AppTheme.NoActionBar" />
-81-->D:\7Pets\app\src\main\AndroidManifest.xml:68:13-56
-82        <activity
-82-->D:\7Pets\app\src\main\AndroidManifest.xml:69:9-71:59
-83            android:name="com.noon.a7pets.Rgisteration.SignUpActivity"
-83-->D:\7Pets\app\src\main\AndroidManifest.xml:70:13-56
-84            android:theme="@style/AppTheme.NoActionBar" />
+50        <activity android:name="com.noon.a7pets.Categories.CatsCategoryActivity" />
+50-->D:\7Pets\app\src\main\AndroidManifest.xml:37:9-69
+50-->D:\7Pets\app\src\main\AndroidManifest.xml:37:19-66
+51        <activity android:name="com.noon.a7pets.Categories.BirdsCategoryActivity" />
+51-->D:\7Pets\app\src\main\AndroidManifest.xml:38:9-70
+51-->D:\7Pets\app\src\main\AndroidManifest.xml:38:19-67
+52        <activity
+52-->D:\7Pets\app\src\main\AndroidManifest.xml:39:9-41:59
+53            android:name="com.noon.a7pets.OrderPlaced"
+53-->D:\7Pets\app\src\main\AndroidManifest.xml:40:13-40
+54            android:theme="@style/AppTheme.NoActionBar" />
+54-->D:\7Pets\app\src\main\AndroidManifest.xml:41:13-56
+55        <activity
+55-->D:\7Pets\app\src\main\AndroidManifest.xml:42:9-44:59
+56            android:name="com.noon.a7pets.Wishlist"
+56-->D:\7Pets\app\src\main\AndroidManifest.xml:43:13-37
+57            android:theme="@style/AppTheme.NoActionBar" />
+57-->D:\7Pets\app\src\main\AndroidManifest.xml:44:13-56
+58        <activity
+58-->D:\7Pets\app\src\main\AndroidManifest.xml:45:9-47:59
+59            android:name="com.noon.a7pets.Profile"
+59-->D:\7Pets\app\src\main\AndroidManifest.xml:46:13-36
+60            android:theme="@style/AppTheme.NoActionBar" />
+60-->D:\7Pets\app\src\main\AndroidManifest.xml:47:13-56
+61        <activity android:name="com.noon.a7pets.Register" />
+61-->D:\7Pets\app\src\main\AndroidManifest.xml:48:9-46
+61-->D:\7Pets\app\src\main\AndroidManifest.xml:48:19-43
+62        <activity
+62-->D:\7Pets\app\src\main\AndroidManifest.xml:49:9-51:59
+63            android:name="com.noon.a7pets.IndividualProduct"
+63-->D:\7Pets\app\src\main\AndroidManifest.xml:50:13-46
+64            android:theme="@style/AppTheme.NoActionBar" />
+64-->D:\7Pets\app\src\main\AndroidManifest.xml:51:13-56
+65        <activity
+65-->D:\7Pets\app\src\main\AndroidManifest.xml:52:9-54:59
+66            android:name="com.noon.a7pets.OrderDetails"
+66-->D:\7Pets\app\src\main\AndroidManifest.xml:53:13-41
+67            android:theme="@style/AppTheme.NoActionBar" />
+67-->D:\7Pets\app\src\main\AndroidManifest.xml:54:13-56
+68        <activity
+68-->D:\7Pets\app\src\main\AndroidManifest.xml:55:9-57:59
+69            android:name="com.noon.a7pets.Cart"
+69-->D:\7Pets\app\src\main\AndroidManifest.xml:56:13-33
+70            android:theme="@style/AppTheme.NoActionBar" />
+70-->D:\7Pets\app\src\main\AndroidManifest.xml:57:13-56
+71        <activity
+71-->D:\7Pets\app\src\main\AndroidManifest.xml:58:9-60:59
+72            android:name="com.noon.a7pets.Productscategory.Dogs"
+72-->D:\7Pets\app\src\main\AndroidManifest.xml:59:13-50
+73            android:theme="@style/AppTheme.NoActionBar" />
+73-->D:\7Pets\app\src\main\AndroidManifest.xml:60:13-56
+74        <activity
+74-->D:\7Pets\app\src\main\AndroidManifest.xml:61:9-63:59
+75            android:name="com.noon.a7pets.LoginActivity"
+75-->D:\7Pets\app\src\main\AndroidManifest.xml:62:13-42
+76            android:theme="@style/AppTheme.NoActionBar" />
+76-->D:\7Pets\app\src\main\AndroidManifest.xml:63:13-56
+77        <activity
+77-->D:\7Pets\app\src\main\AndroidManifest.xml:64:9-66:59
+78            android:name="com.noon.a7pets.DogFood"
+78-->D:\7Pets\app\src\main\AndroidManifest.xml:65:13-36
+79            android:theme="@style/AppTheme.NoActionBar" />
+79-->D:\7Pets\app\src\main\AndroidManifest.xml:66:13-56
+80        <activity
+80-->D:\7Pets\app\src\main\AndroidManifest.xml:67:9-69:59
+81            android:name="com.noon.a7pets.Rgisteration.CompleteSignUpData"
+81-->D:\7Pets\app\src\main\AndroidManifest.xml:68:13-60
+82            android:theme="@style/AppTheme.NoActionBar" />
+82-->D:\7Pets\app\src\main\AndroidManifest.xml:69:13-56
+83        <activity
+83-->D:\7Pets\app\src\main\AndroidManifest.xml:70:9-72:59
+84            android:name="com.noon.a7pets.Rgisteration.SignUpActivity"
 84-->D:\7Pets\app\src\main\AndroidManifest.xml:71:13-56
-85        <activity
-85-->D:\7Pets\app\src\main\AndroidManifest.xml:72:9-74:59
-86            android:name="com.noon.a7pets.Rgisteration.SignInActivity"
-86-->D:\7Pets\app\src\main\AndroidManifest.xml:73:13-56
-87            android:theme="@style/AppTheme.NoActionBar" />
+85            android:theme="@style/AppTheme.NoActionBar" />
+85-->D:\7Pets\app\src\main\AndroidManifest.xml:72:13-56
+86        <activity
+86-->D:\7Pets\app\src\main\AndroidManifest.xml:73:9-75:59
+87            android:name="com.noon.a7pets.Rgisteration.SignInActivity"
 87-->D:\7Pets\app\src\main\AndroidManifest.xml:74:13-56
-88        <activity
-88-->D:\7Pets\app\src\main\AndroidManifest.xml:75:9-84:20
-89            android:name="com.noon.a7pets.SplashActivity"
-89-->D:\7Pets\app\src\main\AndroidManifest.xml:76:13-43
-90            android:screenOrientation="portrait"
-90-->D:\7Pets\app\src\main\AndroidManifest.xml:77:13-49
-91            android:theme="@style/AppTheme.NoActionBar" >
-91-->D:\7Pets\app\src\main\AndroidManifest.xml:78:13-56
-92            <intent-filter>
-92-->D:\7Pets\app\src\main\AndroidManifest.xml:79:13-83:29
-93                <action android:name="android.intent.action.MAIN" />
-93-->D:\7Pets\app\src\main\AndroidManifest.xml:80:17-69
-93-->D:\7Pets\app\src\main\AndroidManifest.xml:80:25-66
-94
-95                <category android:name="android.intent.category.LAUNCHER" />
-95-->D:\7Pets\app\src\main\AndroidManifest.xml:82:17-77
-95-->D:\7Pets\app\src\main\AndroidManifest.xml:82:27-74
-96            </intent-filter>
-97        </activity>
-98        <activity
-98-->D:\7Pets\app\src\main\AndroidManifest.xml:85:9-87:59
-99            android:name="com.noon.a7pets.Rgisteration.WelcomeActivity"
-99-->D:\7Pets\app\src\main\AndroidManifest.xml:86:13-57
-100            android:theme="@style/AppTheme.NoActionBar" />
-100-->D:\7Pets\app\src\main\AndroidManifest.xml:87:13-56
-101        <activity
-101-->D:\7Pets\app\src\main\AndroidManifest.xml:88:9-90:59
-102            android:name="com.noon.a7pets.MainActivity"
-102-->D:\7Pets\app\src\main\AndroidManifest.xml:89:13-41
-103            android:theme="@style/AppTheme.NoActionBar" />
-103-->D:\7Pets\app\src\main\AndroidManifest.xml:90:13-56
-104        <activity
-104-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:27:9-29:72
-105            android:name="com.karumi.dexter.DexterActivity"
-105-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:28:13-60
-106            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-106-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:29:13-69
-107        <activity
-107-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-108            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-108-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-109            android:excludeFromRecents="true"
-109-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-110            android:exported="true"
-110-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-111            android:launchMode="singleTask"
-111-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-112            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-112-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-113-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-114
-115        <service
-115-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
-116            android:name="com.google.firebase.components.ComponentDiscoveryService"
-116-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
-117            android:directBootAware="true"
-117-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-118            android:exported="false" >
-118-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
-119            <meta-data
-119-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-120                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-120-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-121                android:value="com.google.firebase.components.ComponentRegistrar" />
-121-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-122            <meta-data
-122-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:20:13-22:85
-123                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-123-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:21:17-111
-124                android:value="com.google.firebase.components.ComponentRegistrar" />
-124-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:22:17-82
-125            <meta-data
-125-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
-126                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-126-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
-127                android:value="com.google.firebase.components.ComponentRegistrar" />
-127-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
-128            <meta-data
-128-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
-129                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-129-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
-130                android:value="com.google.firebase.components.ComponentRegistrar" />
-130-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
-131            <meta-data
-131-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
-132                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-132-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
-133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
-134            <meta-data
-134-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
-135                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-135-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
-137        </service>
-138
-139        <activity
-139-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
-140            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-140-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
-141            android:excludeFromRecents="true"
-141-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
-142            android:exported="false"
-142-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
-143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-143-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
-144        <!--
-145            Service handling Google Sign-In user revocation. For apps that do not integrate with
-146            Google Sign-In, this service will never be started.
-147        -->
-148        <service
-148-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
-149            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-149-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
-150            android:exported="true"
-150-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
-151            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-151-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
-152
-153        <receiver
-153-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
-154            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-154-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
-155            android:exported="true"
-155-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
-156            android:permission="com.google.android.c2dm.permission.SEND" >
-156-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
-157            <intent-filter>
-157-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
-158                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-158-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
-158-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
-159            </intent-filter>
-160        </receiver>
-161
-162        <activity
-162-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-163            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-163-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-164            android:exported="false"
-164-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-165            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-165-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-166
-167        <receiver
-167-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
-168            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-168-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
-169            android:enabled="true"
-169-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
-170            android:exported="false" >
-170-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
-171        </receiver>
-172        <receiver
-172-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
-173            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-173-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
-174            android:enabled="true"
-174-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
-175            android:exported="true"
-175-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
-176            android:permission="android.permission.INSTALL_PACKAGES" >
-176-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
-177            <intent-filter>
-177-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
-178                <action android:name="com.android.vending.INSTALL_REFERRER" />
-178-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
-178-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
-179            </intent-filter>
-180        </receiver>
-181
-182        <service
-182-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
-183            android:name="com.google.android.gms.measurement.AppMeasurementService"
-183-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
-184            android:enabled="true"
-184-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
-185            android:exported="false" />
-185-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
-186        <service
-186-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
-187            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-187-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
-188            android:enabled="true"
-188-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
-189            android:exported="false"
-189-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
-190            android:permission="android.permission.BIND_JOB_SERVICE" />
-190-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
-191
-192        <provider
-192-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-193            android:name="com.google.firebase.provider.FirebaseInitProvider"
-193-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-194            android:authorities="com.noon.a7pets.firebaseinitprovider"
-194-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-195            android:exported="false"
-195-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-196            android:initOrder="100" />
-196-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-197
-198        <meta-data
-198-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-199            android:name="com.google.android.gms.version"
-199-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-200            android:value="@integer/google_play_services_version" />
-200-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-201
-202        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
-202-->[com.mikepenz:aboutlibraries:7.0.4] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\97479a52cb50152970274c772c754f35\jetified-aboutlibraries-7.0.4\AndroidManifest.xml:12:9-80
-202-->[com.mikepenz:aboutlibraries:7.0.4] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\97479a52cb50152970274c772c754f35\jetified-aboutlibraries-7.0.4\AndroidManifest.xml:12:19-77
-203        <activity
-203-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:19:9-21:48
-204            android:name="com.webianks.easy_feedback.FeedbackActivity"
-204-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:20:13-71
-205            android:label="@string/feedback" />
-205-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:21:13-45
-206
-207        <provider
-207-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:23:9-31:20
-208            android:name="androidx.core.content.FileProvider"
-208-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:24:13-62
-209            android:authorities="com.noon.a7pets.provider"
-209-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:25:13-60
-210            android:exported="false"
-210-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:26:13-37
-211            android:grantUriPermissions="true" >
-211-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:27:13-47
-212            <meta-data
-212-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:28:13-30:58
-213                android:name="android.support.FILE_PROVIDER_PATHS"
-213-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:29:17-67
-214                android:resource="@xml/provider_paths" />
-214-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:30:17-55
-215        </provider>
-216        <provider
-216-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-217            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-217-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-218            android:authorities="com.noon.a7pets.lifecycle-process"
-218-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-219            android:exported="false"
-219-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-220            android:multiprocess="true" />
-220-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-221    </application>
-222
-223</manifest>
+88            android:theme="@style/AppTheme.NoActionBar" />
+88-->D:\7Pets\app\src\main\AndroidManifest.xml:75:13-56
+89        <activity
+89-->D:\7Pets\app\src\main\AndroidManifest.xml:76:9-85:20
+90            android:name="com.noon.a7pets.SplashActivity"
+90-->D:\7Pets\app\src\main\AndroidManifest.xml:77:13-43
+91            android:screenOrientation="portrait"
+91-->D:\7Pets\app\src\main\AndroidManifest.xml:78:13-49
+92            android:theme="@style/AppTheme.NoActionBar" >
+92-->D:\7Pets\app\src\main\AndroidManifest.xml:79:13-56
+93            <intent-filter>
+93-->D:\7Pets\app\src\main\AndroidManifest.xml:80:13-84:29
+94                <action android:name="android.intent.action.MAIN" />
+94-->D:\7Pets\app\src\main\AndroidManifest.xml:81:17-69
+94-->D:\7Pets\app\src\main\AndroidManifest.xml:81:25-66
+95
+96                <category android:name="android.intent.category.LAUNCHER" />
+96-->D:\7Pets\app\src\main\AndroidManifest.xml:83:17-77
+96-->D:\7Pets\app\src\main\AndroidManifest.xml:83:27-74
+97            </intent-filter>
+98        </activity>
+99        <activity
+99-->D:\7Pets\app\src\main\AndroidManifest.xml:86:9-88:59
+100            android:name="com.noon.a7pets.Rgisteration.WelcomeActivity"
+100-->D:\7Pets\app\src\main\AndroidManifest.xml:87:13-57
+101            android:theme="@style/AppTheme.NoActionBar" />
+101-->D:\7Pets\app\src\main\AndroidManifest.xml:88:13-56
+102        <activity
+102-->D:\7Pets\app\src\main\AndroidManifest.xml:89:9-91:59
+103            android:name="com.noon.a7pets.MainActivity"
+103-->D:\7Pets\app\src\main\AndroidManifest.xml:90:13-41
+104            android:theme="@style/AppTheme.NoActionBar" />
+104-->D:\7Pets\app\src\main\AndroidManifest.xml:91:13-56
+105        <activity
+105-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:27:9-29:72
+106            android:name="com.karumi.dexter.DexterActivity"
+106-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:28:13-60
+107            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+107-->[com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:29:13-69
+108        <activity
+108-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+109            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+109-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+110            android:excludeFromRecents="true"
+110-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+111            android:exported="true"
+111-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+112            android:launchMode="singleTask"
+112-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+113            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+113-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+115
+116        <service
+116-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+117            android:name="com.google.firebase.components.ComponentDiscoveryService"
+117-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+119            android:exported="false" >
+119-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+120            <meta-data
+120-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+121                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+121-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\a399ee21de14ed156dd3ef2e238d94fd\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:20:13-22:85
+124                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+124-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:21:17-111
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-firestore:21.3.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c173a060ff1f0776a68ab8f1a39a02d0\jetified-firebase-firestore-21.3.1\AndroidManifest.xml:22:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+127                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+127-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-database:19.2.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\f59ae09a10bc31a767032e42e3c780dc\firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+130                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+130-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\bf65a5c92e5afb304d99f97463e3800e\firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+132            <meta-data
+132-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+133                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+133-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+134                android:value="com.google.firebase.components.ComponentRegistrar" />
+134-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d5eafafd089a7cde0ee47a4026e56089\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+135            <meta-data
+135-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+136                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+136-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+137                android:value="com.google.firebase.components.ComponentRegistrar" />
+137-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+138        </service>
+139
+140        <activity
+140-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+141            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+141-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+142            android:excludeFromRecents="true"
+142-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+143            android:exported="false"
+143-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+144-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+145        <!--
+146            Service handling Google Sign-In user revocation. For apps that do not integrate with
+147            Google Sign-In, this service will never be started.
+148        -->
+149        <service
+149-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+150            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+150-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+151            android:exported="true"
+151-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+152            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+152-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7d731b8274f3d1836a4f427e299c7bd6\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+153
+154        <receiver
+154-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+155            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+155-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+156            android:exported="true"
+156-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+157            android:permission="com.google.android.c2dm.permission.SEND" >
+157-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+158            <intent-filter>
+158-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+159-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+159-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\8dd76bdce9dfd1a360da2cecb43043b3\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+160            </intent-filter>
+161        </receiver>
+162
+163        <activity
+163-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+164            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+164-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+165            android:exported="false"
+165-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+166            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+166-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\b86f782fc38280792c753b7008811558\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+167
+168        <receiver
+168-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+169            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+169-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+170            android:enabled="true"
+170-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+171            android:exported="false" >
+171-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+172        </receiver>
+173        <receiver
+173-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+174            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+174-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+175            android:enabled="true"
+175-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+176            android:exported="true"
+176-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+177            android:permission="android.permission.INSTALL_PACKAGES" >
+177-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+178            <intent-filter>
+178-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+179                <action android:name="com.android.vending.INSTALL_REFERRER" />
+179-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+179-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+180            </intent-filter>
+181        </receiver>
+182
+183        <service
+183-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+184            android:name="com.google.android.gms.measurement.AppMeasurementService"
+184-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+185            android:enabled="true"
+185-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+186            android:exported="false" />
+186-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+187        <service
+187-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+188            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+188-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+189            android:enabled="true"
+189-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+190            android:exported="false"
+190-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+191            android:permission="android.permission.BIND_JOB_SERVICE" />
+191-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\c6009129e1e64aec671ef68c7eb4d9eb\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+192
+193        <provider
+193-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+194            android:name="com.google.firebase.provider.FirebaseInitProvider"
+194-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+195            android:authorities="com.noon.a7pets.firebaseinitprovider"
+195-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+196            android:exported="false"
+196-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+197            android:initOrder="100" />
+197-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\6e754f2e334542d1c1a1d212e494cabd\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+198
+199        <meta-data
+199-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+200            android:name="com.google.android.gms.version"
+200-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+201            android:value="@integer/google_play_services_version" />
+201-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\694913784c664eb3cea819659da4cb9a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+202
+203        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+203-->[com.mikepenz:aboutlibraries:7.0.4] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\97479a52cb50152970274c772c754f35\jetified-aboutlibraries-7.0.4\AndroidManifest.xml:12:9-80
+203-->[com.mikepenz:aboutlibraries:7.0.4] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\97479a52cb50152970274c772c754f35\jetified-aboutlibraries-7.0.4\AndroidManifest.xml:12:19-77
+204        <activity
+204-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:19:9-21:48
+205            android:name="com.webianks.easy_feedback.FeedbackActivity"
+205-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:20:13-71
+206            android:label="@string/feedback" />
+206-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:21:13-45
+207
+208        <provider
+208-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:23:9-31:20
+209            android:name="androidx.core.content.FileProvider"
+209-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:24:13-62
+210            android:authorities="com.noon.a7pets.provider"
+210-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:25:13-60
+211            android:exported="false"
+211-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:26:13-37
+212            android:grantUriPermissions="true" >
+212-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:27:13-47
+213            <meta-data
+213-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:28:13-30:58
+214                android:name="android.support.FILE_PROVIDER_PATHS"
+214-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:29:17-67
+215                android:resource="@xml/provider_paths" />
+215-->[com.webianks.library:easy-feedback:1.0.5] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\1c2b09a5f0a0a3a31c940e9db6e61f3d\jetified-easy-feedback-1.0.5\AndroidManifest.xml:30:17-55
+216        </provider>
+217        <provider
+217-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+218            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+218-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+219            android:authorities="com.noon.a7pets.lifecycle-process"
+219-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+220            android:exported="false"
+220-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+221            android:multiprocess="true" />
+221-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\995cfebd70bb3f316809c2efbb6f933e\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+222    </application>
+223
+224</manifest>

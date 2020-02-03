@@ -30,6 +30,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.noon.a7pets.Activities.ClinicAppoinmentActivity" />
         <activity android:name="com.noon.a7pets.Categories.ClinicReservationActivity" />
         <activity android:name="com.noon.a7pets.Productscategory.OthersSuppliesActivity" />
         <activity android:name="com.noon.a7pets.Productscategory.OthersFoodActivity" />

@@ -38,6 +38,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import com.mikepenz.materialdrawer.util.DrawerUIUtils;
 import com.mikepenz.materialize.util.UIUtils;
+import com.noon.a7pets.Activities.ClinicAppoinmentActivity;
 import com.noon.a7pets.Categories.BirdsCategoryActivity;
 import com.noon.a7pets.Categories.CatsCategoryActivity;
 import com.noon.a7pets.Categories.ClinicReservationActivity;
@@ -318,6 +319,7 @@ public class MainActivity extends AppCompatActivity {
         PrimaryDrawerItem item3 = new PrimaryDrawerItem().withIdentifier(3).withName(R.string.wishlist).withIcon(R.drawable.wishlist);
         PrimaryDrawerItem item4 = new PrimaryDrawerItem().withIdentifier(4).withName(R.string.cart).withIcon(R.drawable.cart);
         PrimaryDrawerItem item5 = new PrimaryDrawerItem().withIdentifier(5).withName(R.string.logout).withIcon(R.drawable.logout);
+        PrimaryDrawerItem item6 = new PrimaryDrawerItem().withIdentifier(6).withName(R.string.clinic).withIcon(R.drawable.ic_assignment_black_24dp);
 
         SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(7).withName("Offers").withIcon(R.drawable.tag);
         SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(8).withName(R.string.aboutapp).withIcon(R.drawable.credits);
@@ -340,7 +342,7 @@ public class MainActivity extends AppCompatActivity {
                 .withTranslucentStatusBar(true)
                 .withActionBarDrawerToggleAnimated(true)
                 .addDrawerItems(
-                        item1, item2, item3, item4, item5, new DividerDrawerItem(), item7, item8, item9, item10,new DividerDrawerItem(),item12,item13
+                        item1, item2, item3, item4, item6, item5, new DividerDrawerItem(), item7, item8, item9, item10,new DividerDrawerItem(),item12,item13
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -362,7 +364,7 @@ public class MainActivity extends AppCompatActivity {
                             case 4:
                                 startActivity(new Intent(MainActivity.this, Cart.class));
                                 break;
-                            case 5:
+                            case 6:
                                 String currentUser = mAuth.getCurrentUser().getUid();
                                 userRef.child(currentUser).child("device_token").setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -375,7 +377,9 @@ public class MainActivity extends AppCompatActivity {
                                 });
                                 finish();
                                 break;
-
+                            case 5:
+                                startActivity(new Intent(MainActivity.this, ClinicAppoinmentActivity.class));
+                                break;
                             case 7:
                                 //startActivity(new Intent(MainActivity.this, NotificationActivity.class));
                                 break;

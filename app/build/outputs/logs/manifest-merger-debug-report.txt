@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
 MERGED from [com.airbnb.android:lottie:3.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\df03a3c9b648c4c6fff537bcd62f0d84\lottie-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.mikepenz:crossfadedrawerlayout:1.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\326803aeece7bcb24e3e6950b91e5367\crossfadedrawerlayout-1.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.mikepenz:materialdrawer:6.1.2] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\3eb4e7700bf408591a47c4e90d14c02b\materialdrawer-6.1.2\AndroidManifest.xml:2:1-11:12
@@ -96,22 +96,22 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Muhammad Jim
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\0c941d6820f951830db1838fc989db31\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\29c3f8c32dedf212f02b17edfab0c9ff\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\7959410a2b1c2f20979f298fe7ed7b3b\protolite-well-known-types-17.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
-INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
 	package
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-93:12
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:1-94:12
 		INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:2:11-69
@@ -180,7 +180,7 @@ MERGED from [com.daimajia.slider:library:1.1.5] C:\Users\Muhammad Jimmy\.gradle\
 	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:11:22-78
 application
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:13:5-91:19
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:13:5-92:19
 MERGED from [com.airbnb.android:lottie:3.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\df03a3c9b648c4c6fff537bcd62f0d84\lottie-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.1.0] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\df03a3c9b648c4c6fff537bcd62f0d84\lottie-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.karumi:dexter:6.0.1] C:\Users\Muhammad Jimmy\.gradle\caches\transforms-2\files-2.1\d74c21d83a75cedc71eddd62d42665e5\dexter-6.0.1\AndroidManifest.xml:26:5-30:19
@@ -263,184 +263,188 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Muhammad Jimmy
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:19:9-40
+activity#com.noon.a7pets.Activities.ClinicAppoinmentActivity
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:9-82
+	android:name
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:19-70
 activity#com.noon.a7pets.Categories.ClinicReservationActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:9-83
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:21:9-74
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:20:19-71
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:21:19-71
 activity#com.noon.a7pets.Productscategory.OthersSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:21:9-77
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:22:9-77
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:21:19-74
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:22:19-74
 activity#com.noon.a7pets.Productscategory.OthersFoodActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:22:9-73
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:23:9-73
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:22:19-70
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:23:19-70
 activity#com.noon.a7pets.Productscategory.FishSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:23:9-75
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:24:9-75
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:23:19-72
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:24:19-72
 activity#com.noon.a7pets.Productscategory.FishFoodActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:24:9-71
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:25:9-71
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:24:19-68
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:25:19-68
 activity#com.noon.a7pets.Productscategory.BuyFishActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:25:9-70
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:26:9-70
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:25:19-67
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:26:19-67
 activity#com.noon.a7pets.Productscategory.DogSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:26:9-74
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:27:9-74
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:26:19-71
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:27:19-71
 activity#com.noon.a7pets.Productscategory.DogsFoodActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:27:9-71
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:28:9-71
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:27:19-68
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:28:19-68
 activity#com.noon.a7pets.Productscategory.CatSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:28:9-74
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:29:9-74
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:28:19-71
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:29:19-71
 activity#com.noon.a7pets.Productscategory.CatFoodActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:29:9-70
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:30:9-70
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:29:19-67
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:30:19-67
 activity#com.noon.a7pets.Productscategory.BirdSuppliesActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:30:9-75
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:31:9-75
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:30:19-72
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:31:19-72
 activity#com.noon.a7pets.Productscategory.BirdFoodActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:31:9-71
-	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:31:19-68
-activity#com.noon.a7pets.Productscategory.BuyBirdsActivity
 ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:32:9-71
 	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:32:19-68
-activity#com.noon.a7pets.Categories.OthersCategoryActivity
+activity#com.noon.a7pets.Productscategory.BuyBirdsActivity
 ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:33:9-71
 	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:33:19-68
-activity#com.noon.a7pets.Categories.FishCategoryActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:34:9-69
+activity#com.noon.a7pets.Categories.OthersCategoryActivity
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:34:19-66
-activity#com.noon.a7pets.Categories.DogsCategoryActivity
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:34:19-68
+activity#com.noon.a7pets.Categories.FishCategoryActivity
 ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:35:9-69
 	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:35:19-66
-activity#com.noon.a7pets.Categories.CatsCategoryActivity
+activity#com.noon.a7pets.Categories.DogsCategoryActivity
 ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:36:9-69
 	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:36:19-66
+activity#com.noon.a7pets.Categories.CatsCategoryActivity
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:37:9-69
+	android:name
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:37:19-66
 activity#com.noon.a7pets.Categories.BirdsCategoryActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:37:9-70
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:38:9-70
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:37:19-67
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:38:19-67
 activity#com.noon.a7pets.OrderPlaced
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:38:9-40:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:39:9-41:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:40:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:41:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:39:13-40
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:40:13-40
 activity#com.noon.a7pets.Wishlist
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:41:9-43:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:42:9-44:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:43:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:44:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:43:13-37
 activity#com.noon.a7pets.Profile
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:44:9-46:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:45:9-47:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:47:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:45:13-36
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:46:13-36
 activity#com.noon.a7pets.Register
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:47:9-46
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:48:9-46
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:47:19-43
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:48:19-43
 activity#com.noon.a7pets.IndividualProduct
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:48:9-50:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:49:9-51:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:50:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:49:13-46
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:50:13-46
 activity#com.noon.a7pets.OrderDetails
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:51:9-53:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:52:9-54:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:53:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:54:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:52:13-41
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:53:13-41
 activity#com.noon.a7pets.Cart
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:54:9-56:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:55:9-57:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:56:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:57:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:55:13-33
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:56:13-33
 activity#com.noon.a7pets.Productscategory.Dogs
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:57:9-59:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:58:9-60:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:59:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:60:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:58:13-50
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:59:13-50
 activity#com.noon.a7pets.LoginActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:60:9-62:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:61:9-63:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:62:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:63:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:61:13-42
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:62:13-42
 activity#com.noon.a7pets.DogFood
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:63:9-65:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:64:9-66:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:65:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:66:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:64:13-36
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:65:13-36
 activity#com.noon.a7pets.Rgisteration.CompleteSignUpData
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:66:9-68:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:67:9-69:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:68:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:69:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:67:13-60
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:68:13-60
 activity#com.noon.a7pets.Rgisteration.SignUpActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:69:9-71:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:70:9-72:59
 	android:theme
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:72:13-56
+	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:71:13-56
-	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:70:13-56
 activity#com.noon.a7pets.Rgisteration.SignInActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:72:9-74:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:73:9-75:59
 	android:theme
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:75:13-56
+	android:name
 		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:74:13-56
-	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:73:13-56
 activity#com.noon.a7pets.SplashActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:75:9-84:20
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:76:9-85:20
 	android:screenOrientation
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:77:13-49
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:78:13-49
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:78:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:79:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:76:13-43
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:77:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:79:13-83:29
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:80:13-84:29
 action#android.intent.action.MAIN
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:80:17-69
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:81:17-69
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:80:25-66
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:81:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:82:17-77
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:83:17-77
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:82:27-74
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:83:27-74
 activity#com.noon.a7pets.Rgisteration.WelcomeActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:85:9-87:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:86:9-88:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:87:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:88:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:86:13-57
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:87:13-57
 activity#com.noon.a7pets.MainActivity
-ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:88:9-90:59
+ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:89:9-91:59
 	android:theme
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:90:13-56
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:91:13-56
 	android:name
-		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:89:13-41
+		ADDED from D:\7Pets\app\src\main\AndroidManifest.xml:90:13-41
 uses-sdk
 INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\7Pets\app\src\main\AndroidManifest.xml

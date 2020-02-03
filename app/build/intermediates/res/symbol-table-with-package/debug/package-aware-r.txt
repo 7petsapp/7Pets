@@ -1697,6 +1697,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btn_style
+drawable btn_style_red
 drawable bubble
 drawable button_rect_normal
 drawable calendar
@@ -1758,6 +1759,7 @@ drawable headertext
 drawable helpccenter
 drawable home
 drawable ic_add_black_24dp
+drawable ic_assignment_black_24dp
 drawable ic_clear_black_18dp
 drawable ic_expand
 drawable ic_favorite_border_black_18dp
@@ -1971,6 +1973,7 @@ id birds_supplies_recycler_view
 id blocking
 id body
 id bottom
+id btnCancelAppointment
 id btn_next
 id btn_skip
 id buttonPanel
@@ -2210,6 +2213,7 @@ id name_button
 id navigation_header_container
 id negative
 id never
+id noAppointments
 id no_of_items
 id none
 id normal
@@ -2331,6 +2335,9 @@ id sub_title
 id submenuarrow
 id submitSuggestion
 id submit_area
+id tVAppointmentDate
+id tVAppointmentTime
+id tVReasonOfAppointment
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2450,6 +2457,7 @@ layout activity_cart
 layout activity_cat_food
 layout activity_cat_supplies
 layout activity_cats_category
+layout activity_clinic_appoinment
 layout activity_clinic_reservation
 layout activity_complete_sign_up_data
 layout activity_dog_food
@@ -2619,6 +2627,7 @@ string changes
 string character_counter_content_description
 string character_counter_pattern
 string click_again
+string clinic
 string cod
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
