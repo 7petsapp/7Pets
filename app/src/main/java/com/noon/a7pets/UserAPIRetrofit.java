@@ -1,5 +1,7 @@
 package com.noon.a7pets;
 
+import com.noon.a7pets.models.User;
+
 import java.util.List;
 
 import retrofit2.Call;

@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.noon.a7pets.R;
 import com.noon.a7pets.models.ClinicReservation;
+import com.noon.a7pets.networksync.CheckInternetConnection;
 
 public class ClinicAppoinmentActivity extends AppCompatActivity {
 
@@ -43,6 +44,9 @@ public class ClinicAppoinmentActivity extends AppCompatActivity {
         tVReasonOfAppointment = findViewById(R.id.tVReasonOfAppointment);
         tVAppointmentDate = findViewById(R.id.tVAppointmentDate);
         tVAppointmentTime = findViewById(R.id.tVAppointmentTime);
+
+        //check Internet Connection
+        new CheckInternetConnection(this).checkConnection();
 
         btnCancelAppointment = findViewById(R.id.btnCancelAppointment);
         btnCancelAppointment.setOnClickListener(new View.OnClickListener() {

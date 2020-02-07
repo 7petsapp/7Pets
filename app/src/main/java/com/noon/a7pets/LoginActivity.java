@@ -16,7 +16,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -26,11 +25,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.noon.a7pets.Rgisteration.SignUpActivity;
+import com.noon.a7pets.models.User;
 import com.noon.a7pets.networksync.CheckInternetConnection;
 import com.noon.a7pets.usersession.UserSession;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.List;
 

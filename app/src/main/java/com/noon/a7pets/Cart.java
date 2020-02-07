@@ -17,9 +17,11 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 import com.noon.a7pets.models.GenericProductModel;
 import com.noon.a7pets.models.SingleProductModel;
 import com.noon.a7pets.networksync.CheckInternetConnection;
@@ -49,12 +51,13 @@ public class Cart extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference mDatabaseReference = database.getReference();
     private LottieAnimationView tv_no_item;
-    private LinearLayout activitycartlist;
+    private LinearLayout activitycartlist, toolbarwrap;
     private LottieAnimationView emptycart;
 
     private ArrayList<SingleProductModel> cartcollect;
     private String totalcost= "0";
     private String totalproducts = "0";
+    private ImageView cartBackArrow;
 
 
     public FirebaseRecyclerAdapter adapter;
@@ -73,9 +76,6 @@ public class Cart extends AppCompatActivity {
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
-        //check Internet Connection
-        new CheckInternetConnection(this).checkConnection();
-
         //retrieve session values and display on listviews
         getValues();
 
@@ -84,9 +84,38 @@ public class Cart extends AppCompatActivity {
 
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         currentUserID = mAuth.getCurrentUser().getUid();
+        toolbarwrap = findViewById(R.id.toolbarwrap);
+
+        DatabaseReference usersDb = FirebaseDatabase.getInstance().getReference().child("Users").child(currentUserID);
+        usersDb.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChild("Cart")){
+                    fetch();
+                    adapter.startListening();
+                } else {
+                    tv_no_item.setVisibility(View.GONE);
+                    activitycartlist.setVisibility(View.GONE);
+                    emptycart.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         //validating session
         session.isLoggedIn();
+
+        cartBackArrow = findViewById(R.id.cartBackArrow);
+        cartBackArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         mRecyclerView = findViewById(R.id.recyclerview);
         tv_no_item = findViewById(R.id.tv_no_cards);
@@ -102,15 +131,14 @@ public class Cart extends AppCompatActivity {
         mLayoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setHasFixedSize(true);
-        fetch();
 
-        if(session.getCartValue()>0) {
-            fetch();
-        }else if(session.getCartValue() == 0)  {
-            tv_no_item.setVisibility(View.GONE);
-            activitycartlist.setVisibility(View.GONE);
-            emptycart.setVisibility(View.VISIBLE);
-        }
+//        if(session.getCartValue()>0) {
+//            fetch();
+//        }else if(session.getCartValue() == 0)  {
+//            tv_no_item.setVisibility(View.GONE);
+//            activitycartlist.setVisibility(View.GONE);
+//            emptycart.setVisibility(View.VISIBLE);
+//        }
     }
 
 //    private void populateRecyclerView() {
@@ -168,8 +196,6 @@ public class Cart extends AppCompatActivity {
                                 return new SingleProductModel(
                                         snapshot.child("prid").getValue().toString(),
                                         snapshot.child("no_of_items").getValue().toString(),
-                                        snapshot.child("useremail").getValue().toString(),
-                                        snapshot.child("usermobile").getValue().toString(),
                                         snapshot.child("prname").getValue().toString(),
                                         snapshot.child("prprice").getValue().toString(),
                                         snapshot.child("primage").getValue().toString(),
@@ -196,7 +222,7 @@ public class Cart extends AppCompatActivity {
                     tv_no_item.setVisibility(View.GONE);
                 }
                 holder.cardname.setText(model.getPrname());
-                holder.cardprice.setText("₹ "+model.getPrprice());
+                holder.cardprice.setText(model.getPrprice() + " EGP");
                 holder.cardcount.setText("Quantity : "+model.getNo_of_items());
                 Picasso.with(Cart.this).load(model.getPrimage()).into(holder.cardimage);
 
@@ -396,7 +422,25 @@ public class Cart extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        adapter.startListening();
+        DatabaseReference usersDb = FirebaseDatabase.getInstance().getReference().child("Users").child(currentUserID);
+        usersDb.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.hasChild("Cart")){
+                    fetch();
+                    adapter.startListening();
+                } else {
+                    tv_no_item.setVisibility(View.GONE);
+                    activitycartlist.setVisibility(View.GONE);
+                    emptycart.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override

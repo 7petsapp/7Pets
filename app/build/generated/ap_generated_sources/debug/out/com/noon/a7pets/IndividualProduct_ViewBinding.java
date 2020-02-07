@@ -9,7 +9,6 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
-import com.airbnb.lottie.LottieAnimationView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -32,7 +31,6 @@ public class IndividualProduct_ViewBinding implements Unbinder {
     target.buyNow = Utils.findRequiredViewAsType(source, R.id.buy_now, "field 'buyNow'", TextView.class);
     target.productdesc = Utils.findRequiredViewAsType(source, R.id.productdesc, "field 'productdesc'", TextView.class);
     target.quantityProductPage = Utils.findRequiredViewAsType(source, R.id.quantityProductPage, "field 'quantityProductPage'", EditText.class);
-    target.addToWishlist = Utils.findRequiredViewAsType(source, R.id.add_to_wishlist, "field 'addToWishlist'", LottieAnimationView.class);
     target.customheader = Utils.findRequiredViewAsType(source, R.id.customheader, "field 'customheader'", EditText.class);
     target.custommessage = Utils.findRequiredViewAsType(source, R.id.custommessage, "field 'custommessage'", EditText.class);
   }
@@ -51,7 +49,6 @@ public class IndividualProduct_ViewBinding implements Unbinder {
     target.buyNow = null;
     target.productdesc = null;
     target.quantityProductPage = null;
-    target.addToWishlist = null;
     target.customheader = null;
     target.custommessage = null;
   }

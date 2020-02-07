@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.noon.a7pets.MainActivity;
 import com.noon.a7pets.R;
-import com.noon.a7pets.User;
+import com.noon.a7pets.models.User;
 import com.noon.a7pets.usersession.UserSession;
 
 public class CompleteSignUpData extends Activity {

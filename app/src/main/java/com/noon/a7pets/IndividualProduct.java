@@ -1,5 +1,6 @@
 package com.noon.a7pets;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.BindView;
@@ -18,14 +19,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.noon.a7pets.models.GenericProductModel;
 import com.noon.a7pets.models.SingleProductModel;
+import com.noon.a7pets.models.User;
 import com.noon.a7pets.networksync.CheckInternetConnection;
 import com.noon.a7pets.usersession.UserSession;
 import com.squareup.picasso.Picasso;
@@ -46,8 +53,8 @@ public class IndividualProduct extends AppCompatActivity {
     TextView productdesc;
     @BindView(R.id.quantityProductPage)
     EditText quantityProductPage;
-    @BindView(R.id.add_to_wishlist)
-    LottieAnimationView addToWishlist;
+    //    @BindView(R.id.add_to_wishlist)
+//    LottieAnimationView addToWishlist;
     @BindView(R.id.customheader)
     EditText customheader;
     @BindView(R.id.custommessage)
@@ -63,6 +70,8 @@ public class IndividualProduct extends AppCompatActivity {
     private FirebaseFirestore mFireStore;
     private FirebaseUser user;
     private ImageView backArrow;
+    private String userId;
+    private SingleProductModel singleProductModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +83,7 @@ public class IndividualProduct extends AppCompatActivity {
         new CheckInternetConnection(this).checkConnection();
 
         mAuth = FirebaseAuth.getInstance();
+        userId = mAuth.getCurrentUser().getUid();
         userRef = FirebaseDatabase.getInstance().getReference().child("Users");
         mFireStore = FirebaseFirestore.getInstance();
         final FirebaseUser user = mAuth.getCurrentUser();
@@ -206,26 +216,67 @@ public class IndividualProduct extends AppCompatActivity {
 
     public void addToCart(View view) {
 
-        if (customheader.getText().toString().length() == 0 || custommessage.getText().toString().length() == 0) {
+        Intent intent = getIntent();
+        GenericProductModel model = intent.getParcelableExtra("product");
 
-            Snackbar.make(view, "Header or Message Empty", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
+        if (customheader.getText().toString().length() == 0 || custommessage.getText().toString().length() == 0) {
+            singleProductModel = new SingleProductModel(String.valueOf(model.getCardid()),
+                    String.valueOf(quantity),
+                    model.getCardname(), String.valueOf(model.getCardprice()), model.getCardimage(),
+                    model.carddiscription, customheader.getText().toString(), custommessage.getText().toString());
         } else {
 
-            String currentUserID = mAuth.getCurrentUser().getUid();
-            mDatabaseReference.child("Users").child(currentUserID).child("Cart").push().setValue(getProductObject());
-            session.increaseCartValue();
-            Log.e("Cart Value IP", session.getCartValue() + " ");
-            //Toasty.success(IndividualProduct.this, "Added to Cart", Toast.LENGTH_SHORT).show();
-            Toast.makeText(this, "Added to Cart", Toast.LENGTH_SHORT).show();
+            singleProductModel = new SingleProductModel(String.valueOf(model.getCardid()),
+                    String.valueOf(quantity),
+                    model.getCardname(), String.valueOf(model.getCardprice()), model.getCardimage(),
+                    model.carddiscription);
         }
+        String currentUserID = mAuth.getCurrentUser().getUid();
+        mDatabaseReference.child("Users").child(currentUserID).child("Cart").push().setValue(singleProductModel).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                session.increaseCartValue();
+                Log.e("Cart Value IP", session.getCartValue() + " ");
+                //Toasty.success(IndividualProduct.this, "Added to Cart", Toast.LENGTH_SHORT).show();
+                Toast.makeText(IndividualProduct.this, "Added to Cart", Toast.LENGTH_SHORT).show();
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(IndividualProduct.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     public void addToWishList(View view) {
+        Intent intent = getIntent();
+        GenericProductModel model = intent.getParcelableExtra("product");
 
-        addToWishlist.playAnimation();
-        String currentUserID = mAuth.getCurrentUser().getUid();
-        mDatabaseReference.child("Users").child(currentUserID).child("wishList").push().setValue(getProductObject());
+//        addToWishlist.playAnimation();
+
+        DatabaseReference usersDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
+        usersDb.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    User user = dataSnapshot.getValue(User.class);
+                    String quantity = quantityProductPage.getText().toString().trim();
+                    String cardId = String.valueOf(model.getCardid());
+                    singleProductModel = new SingleProductModel(cardId,
+                            user.getEmail(), user.getMobile(),
+                            model.getCardname(), String.valueOf(model.getCardprice()), model.getCardimage(),
+                            model.carddiscription, customheader.getText().toString(), custommessage.getText().toString());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        mDatabaseReference.child("Users").child(userId).child("wishList").push().setValue(singleProductModel);
+
         session.increaseWishlistValue();
     }
 

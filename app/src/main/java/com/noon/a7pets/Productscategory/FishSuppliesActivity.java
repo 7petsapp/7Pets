@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.noon.a7pets.ProductsAdapter;
 import com.noon.a7pets.R;
 import com.noon.a7pets.models.GenericProductModel;
+import com.noon.a7pets.networksync.CheckInternetConnection;
 
 import java.util.ArrayList;
 
@@ -38,6 +39,9 @@ public class FishSuppliesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fish_supplies);
 
         fish_supplies_recycler_view = findViewById(R.id.fish_supplies_recycler_view);
+
+        //check Internet Connection
+        new CheckInternetConnection(this).checkConnection();
 
         if (fish_supplies_recycler_view != null) {
             //to enable optimization of recyclerview

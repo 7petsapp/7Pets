@@ -23,7 +23,7 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int background = 0x7f0a006a;
+        public static final int background = 0x7f0a0069;
         public static final int container = 0x7f0a009e;
         public static final int details_label = 0x7f0a00bd;
         public static final int label = 0x7f0a0103;

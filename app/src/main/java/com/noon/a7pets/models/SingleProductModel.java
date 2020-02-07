@@ -10,13 +10,73 @@ public class SingleProductModel implements Serializable {
 
     private String prid;
     private String no_of_items;
-    private String useremail,usermobile,prname,prprice,primage,prdesc,message_header,message_body;
+    private String useremail, usermobile, prname, prprice, primage, prdesc, message_header, message_body;
 
     public SingleProductModel() {
     }
 
-    public SingleProductModel(String prid, String no_of_items, String useremail, String usermobile,
-                              String prname, String prprice, String primage, String prdesc, String message_header, String message_body) {
+    public SingleProductModel(String prid,
+                              String no_of_items,
+                              String prname,
+                              String prprice,
+                              String primage,
+                              String prdesc) {
+        this.prid = prid;
+        this.no_of_items = no_of_items;
+        this.prname = prname;
+        this.prprice = prprice;
+        this.primage = primage;
+        this.prdesc = prdesc;
+    }
+
+    public SingleProductModel(String prid,
+                              String no_of_items,
+                              String prname,
+                              String prprice,
+                              String primage,
+                              String prdesc,
+                              String message_header,
+                              String message_body) {
+        this.prid = prid;
+        this.no_of_items = no_of_items;
+        this.prname = prname;
+        this.prprice = prprice;
+        this.primage = primage;
+        this.prdesc = prdesc;
+        this.message_header = message_header;
+        this.message_body = message_body;
+    }
+
+    public SingleProductModel(String prid,
+                              String useremail,
+                              String usermobile,
+                              String prname,
+                              String prprice,
+                              String primage,
+                              String prdesc,
+                              String message_header,
+                              String message_body) {
+        this.prid = prid;
+        this.useremail = useremail;
+        this.usermobile = usermobile;
+        this.prname = prname;
+        this.prprice = prprice;
+        this.primage = primage;
+        this.prdesc = prdesc;
+        this.message_header = message_header;
+        this.message_body = message_body;
+    }
+
+    public SingleProductModel(String prid,
+                              String no_of_items,
+                              String useremail,
+                              String usermobile,
+                              String prname,
+                              String prprice,
+                              String primage,
+                              String prdesc,
+                              String message_header,
+                              String message_body) {
         this.prid = prid;
         this.no_of_items = no_of_items;
         this.useremail = useremail;

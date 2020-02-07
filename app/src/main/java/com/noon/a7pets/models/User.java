@@ -1,4 +1,4 @@
-package com.noon.a7pets;
+package com.noon.a7pets.models;
 
 public class User {
 
@@ -8,6 +8,8 @@ public class User {
     private String email;
     private String photo;
 
+    public User() {
+    }
 
     public User(String name, String password, String mobile, String email, String photo) {
         this.name = name;

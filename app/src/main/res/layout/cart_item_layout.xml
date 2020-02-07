@@ -36,7 +36,7 @@
                     android:layout_height="match_parent"
                     android:text="Denim Shirt"
                     android:gravity="center_vertical"
-                    android:textSize="@dimen/text_size_xmedium"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_weight="9"/>
 
@@ -55,21 +55,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rs. 8,999"
-                android:textSize="@dimen/text_size_xmedium"
+                android:textSize="14sp"
                 android:textColor="#4CAF50"
                 android:layout_marginTop="@dimen/margin_small"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Delivery charge: FREE"
-                android:textSize="@dimen/text_size_small"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Delivery charge: FREE"-->
+<!--                android:textSize="@dimen/text_size_small"/>-->
 
             <TextView
                 android:id="@+id/cart_prcount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Qty: 1"
-                android:textSize="@dimen/text_size_small"/>
+                android:textSize="14sp"/>
 
         </LinearLayout>
     </LinearLayout>

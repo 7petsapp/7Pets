@@ -40,7 +40,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.noon.a7pets.MainActivity;
 import com.noon.a7pets.R;
-import com.noon.a7pets.User;
+import com.noon.a7pets.models.User;
 import com.noon.a7pets.usersession.UserSession;
 
 import java.io.IOException;

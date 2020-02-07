@@ -20,6 +20,12 @@
             style="@style/CustomTheme"
             android:background="@color/colorAccent">
 
+            <ImageView
+                android:id="@+id/cartBackArrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/arrowbackpng"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -58,6 +64,10 @@
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_below="@id/toolbarwrap"
