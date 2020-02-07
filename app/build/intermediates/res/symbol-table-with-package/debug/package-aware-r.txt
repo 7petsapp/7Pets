@@ -1759,6 +1759,7 @@ drawable headertext
 drawable helpccenter
 drawable home
 drawable ic_add_black_24dp
+drawable ic_add_location_white_24dp
 drawable ic_assignment_black_24dp
 drawable ic_clear_black_18dp
 drawable ic_expand
@@ -1778,6 +1779,7 @@ drawable indicator_corner_bg
 drawable internetconnection
 drawable keychain
 drawable kprogresshud_spinner
+drawable location
 drawable lock
 drawable logout
 drawable mail
@@ -2056,6 +2058,8 @@ id dogs
 id dogs_food_recycler_view
 id dogs_supplies_recycler_view
 id editText
+id editTextAddress
+id editTextAddress_google
 id editTextConfirmPassword
 id editTextEmail
 id editTextFirstName

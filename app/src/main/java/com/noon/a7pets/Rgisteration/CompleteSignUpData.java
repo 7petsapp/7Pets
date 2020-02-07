@@ -29,9 +29,9 @@ import com.noon.a7pets.usersession.UserSession;
 
 public class CompleteSignUpData extends Activity {
 
-    EditText editTextPhone;
+    EditText editTextPhone, editTextAddress_google;
 
-    private String phoneNumber, username, email, photoURL;
+    private String phoneNumber,address, username, email, photoURL;
 
     private UserSession session;
 
@@ -60,6 +60,9 @@ public class CompleteSignUpData extends Activity {
         editTextPhone = findViewById(R.id.editTextPhone_google);
         phoneNumber = editTextPhone.getText().toString().trim();
 
+        editTextAddress_google =findViewById(R.id.editTextAddress_google);
+        address = editTextAddress_google.getText().toString().trim();
+
 
 
         finishSignInBtn = findViewById(R.id.finish_ggogle_signUp);
@@ -80,9 +83,9 @@ public class CompleteSignUpData extends Activity {
         final String phoneNumber = editTextPhone.getText().toString().trim();
         String userId = mAuth.getCurrentUser().getUid();
         DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
-        user = new User(username, phoneNumber, email, photoURL);
 
         if (photoURL != null) {
+            user = new User(username, phoneNumber, email, photoURL, address);
             finishSignInBtn.setVisibility(View.GONE);
             String sessionName = user.getName();
             String sessionMail = user.getEmail();
@@ -115,7 +118,7 @@ public class CompleteSignUpData extends Activity {
             });
         } else {
             finishSignInBtn.setVisibility(View.GONE);
-            user = new User(username, phoneNumber, email);
+            user = new User(username, phoneNumber, email, null, address);
             currentUserDb.setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
@@ -123,7 +126,7 @@ public class CompleteSignUpData extends Activity {
                     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                     currentUser.sendEmailVerification();
 
-                    user = new User(username, phoneNumber, email, null);
+                    user = new User(username, phoneNumber, email, null, address);
                     String sessionName = user.getName();
                     String sessionMail = user.getEmail();
                     String sessionMobile = user.getMobile();

@@ -361,10 +361,10 @@ public class MainActivity extends AppCompatActivity {
 //                            case 3:
 //                                startActivity(new Intent(MainActivity.this, Wishlist.class));
 //                                break;
-                            case 4:
+                            case 3:
                                 startActivity(new Intent(MainActivity.this, Cart.class));
                                 break;
-                            case 6:
+                            case 4:
                                 String currentUser = mAuth.getCurrentUser().getUid();
                                 userRef.child(currentUser).child("device_token").setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override

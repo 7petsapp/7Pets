@@ -18,7 +18,7 @@
         android:text="Complete your Data to Finish the sign up"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:layout_marginBottom="150dp"/>
+        android:layout_marginBottom="110dp"/>
 
 
     <com.rengwuxian.materialedittext.MaterialEditText
@@ -33,6 +33,20 @@
         app:met_clearButton="true"
         app:met_primaryColor="@color/colorAccent"
         android:inputType="number"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/editTextAddress_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:textSize="16sp"
+        app:met_baseColor="@color/colorAccent"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/darkWhite"
+        app:met_floatingLabel="highlight"
+        app:met_iconLeft="@drawable/location"
+        app:met_primaryColor="@color/colorAccent" />
 
 
     <RelativeLayout

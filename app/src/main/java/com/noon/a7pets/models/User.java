@@ -3,20 +3,24 @@ package com.noon.a7pets.models;
 public class User {
 
     private String name;
-    private String password;
     private String mobile;
     private String email;
     private String photo;
+    private String address;
 
     public User() {
     }
 
-    public User(String name, String password, String mobile, String email, String photo) {
+    public User(String name,
+                String mobile,
+                String email,
+                String photo,
+                String address) {
         this.name = name;
-        this.password = password;
         this.mobile = mobile;
         this.email = email;
         this.photo = photo;
+        this.address = address;
     }
 
     public User(String username, String phoneNumber, String email, String profileImageUrl) {
@@ -32,12 +36,16 @@ public class User {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
+    public String getAddress() {
+        return address;
     }
 
-    public String getPassword() {
-        return password;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getMobile() {
@@ -54,10 +62,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public void setMobile(String mobile) {

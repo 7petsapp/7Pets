@@ -54,10 +54,6 @@ import androidx.core.content.res.ResourcesCompat;
 
 public class SignUpActivity extends Activity {
 
-    // 0 => chosen
-    // 1 => not chosen
-    public static int COMPANY_CHOSEN = 0, BRANCH_CHOSEN = 0, ACCOUNT_CHOSEN = 0, CURRENT_SHIFT_CHOSEN = 0;
-    static int TIME_SELECTED = 0; // 0 => AM & 1 => PM
     static final int PReqCode = 1;
     static int REQUESTCODE = 1;
     static int IMG_UPLOADED = 0;
@@ -66,21 +62,18 @@ public class SignUpActivity extends Activity {
     Button signUpButton;
     ImageView userImageSignUp;
     Uri pickedImageUri;
-    EditText editTextEmail, editTextPassword, editTextConfirmPassword, editTextFirstName, editTextPhone, editTextLastName;
+    EditText editTextEmail, editTextPassword, editTextConfirmPassword, editTextFirstName, editTextPhone, editTextAddress;
     String profileImageUrl;
-    public static Spinner spinnerCompany,
-            spinnerCompanyBranchRaya, spinnerCompanyBranchVodafone, spinnerCompanyBranchOrange,
-            spinnerAccountEtisalat, spinnerAccountVodafoneArabic, spinnerAccountVodafoneUK, spinnerAccountArabicAccount;
     ProgressBar progressBarImg;
     private FirebaseAuth mAuth;
     private DatabaseReference userRef;
     private DatabaseReference deviceTokenRef;
     private UploadTask uploadTask;
-    private String name,email,password,mobile;
+    private String name, email, password, mobile;
     private TextView appname;
     private Bitmap bitmap;
     private UserSession session;
-    private String sessionEmail,sessionPass,sessionMobile,sessionName,sessionPhoto;
+    private String sessionEmail, sessionPass, sessionMobile, sessionName, sessionPhoto;
 
     String currentUserID;
     //Getting reference to Firebase Database
@@ -120,8 +113,7 @@ public class SignUpActivity extends Activity {
         //editTextLastName = (EditText) findViewById(R.id.editTextLastName);
         editTextPhone = (EditText) findViewById(R.id.editTextPhone);
         editTextConfirmPassword = (EditText) findViewById(R.id.editTextConfirmPassword);
-
-
+        editTextAddress = findViewById(R.id.editTextAddress);
 
 
         signUpButton = (Button) findViewById(R.id.buttonSignUp);
@@ -162,23 +154,18 @@ public class SignUpActivity extends Activity {
 
 
     private void saveUserInfoToFirebaseDatabase() {
-        String AMorPM;
-        if (TIME_SELECTED == 0) {
-            AMorPM = " AM";
-        } else {
-            AMorPM = " PM";
-        }
         final String name = editTextFirstName.getText().toString().trim();
         final String username = name;
         final String phoneNumber = editTextPhone.getText().toString().trim();
         final String email = editTextEmail.getText().toString().trim();
+        String address = editTextAddress.getText().toString().trim();
         String userId = mAuth.getCurrentUser().getUid();
         User user;
         DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
 
         if (profileImageUrl != null) {
             signUpButton.setVisibility(View.GONE);
-            user = new User(username, phoneNumber, email, profileImageUrl);
+            user = new User(username, phoneNumber, email, profileImageUrl, address);
 
             currentUserDb.setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
@@ -189,7 +176,7 @@ public class SignUpActivity extends Activity {
                     currentUser.sendEmailVerification();
 
                     //create shared preference and store data
-                    session.createLoginSession(username,email,phoneNumber,profileImageUrl);
+                    session.createLoginSession(username, email, phoneNumber, profileImageUrl);
 
                     Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -205,7 +192,7 @@ public class SignUpActivity extends Activity {
             });
         } else {
             signUpButton.setVisibility(View.GONE);
-            user = new User(username, phoneNumber, email, null);
+            user = new User(username, phoneNumber, email, null, address);
             currentUserDb.setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {
@@ -350,6 +337,7 @@ public class SignUpActivity extends Activity {
         String firstName = editTextFirstName.getText().toString().trim();
         //String lastName = editTextLastName.getText().toString().trim();
         final String phoneNumber = editTextPhone.getText().toString();
+        String address = editTextAddress.getText().toString();
 
         if (firstName.isEmpty()) {
             editTextFirstName.setError("Name is required");
@@ -368,11 +356,6 @@ public class SignUpActivity extends Activity {
         }
         if (phoneNumber.isEmpty()) {
             editTextPhone.setError("Phone number is required");
-            editTextPhone.requestFocus();
-            return;
-        }
-        if (phoneNumber.length() != 11) {
-            editTextPhone.setError("Please enter a valid phone number");
             editTextPhone.requestFocus();
             return;
         }
@@ -396,16 +379,14 @@ public class SignUpActivity extends Activity {
             editTextConfirmPassword.requestFocus();
             return;
         }
-        if (COMPANY_CHOSEN == 1) {
-            Toast.makeText(this, "choose a Branch", Toast.LENGTH_SHORT).show();
+        if (phoneNumber.length() != 11) {
+            editTextPhone.setError("Please enter a valid phone number");
+            editTextPhone.requestFocus();
             return;
         }
-        if (BRANCH_CHOSEN == 1) {
-            Toast.makeText(this, "choose a branch", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (ACCOUNT_CHOSEN == 1) {
-            Toast.makeText(this, "choose an account", Toast.LENGTH_SHORT).show();
+        if (address.isEmpty()) {
+            editTextPassword.setError("Address is required");
+            editTextPassword.requestFocus();
             return;
         }
 
@@ -466,8 +447,8 @@ public class SignUpActivity extends Activity {
         mDatabaseReference.child(currentUserID).child("cart").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.e(dataSnapshot.getKey(),dataSnapshot.getChildrenCount() + "");
-                session.setCartValue((int)dataSnapshot.getChildrenCount());
+                Log.e(dataSnapshot.getKey(), dataSnapshot.getChildrenCount() + "");
+                session.setCartValue((int) dataSnapshot.getChildrenCount());
             }
 
             @Override
@@ -479,8 +460,8 @@ public class SignUpActivity extends Activity {
         mDatabaseReference.child(currentUserID).child("wishlist").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.e(dataSnapshot.getKey(),dataSnapshot.getChildrenCount() + "");
-                session.setWishlistValue((int)dataSnapshot.getChildrenCount());
+                Log.e(dataSnapshot.getKey(), dataSnapshot.getChildrenCount() + "");
+                session.setWishlistValue((int) dataSnapshot.getChildrenCount());
             }
 
             @Override
